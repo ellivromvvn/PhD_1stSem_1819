@@ -1,0 +1,30 @@
+---
+title: "Readings in History and Philosophy of Science and Technology Education: *Does Science Teaching Need History and Philosophy of Science* by Peter Slezak"
+author:
+  - Orville D. Hombrebueno
+  - "Ph.D. in Science Education: Mathematics"
+date: "October 5, 2018"
+output: word_document
+bibliography: ["biblio.bib"]
+biblio-style: "apalike"
+---
+
+1. What makes science and mathematics education daunting tasks among educators. Cite evidences from the reading material.
+
+In the article, the utilitarian view of teaching science leads to "anti-intellectualism". This view of teaching can be countered by HPS. Having said this, the integration of HPS in the curriculum makes science and mathematics teaching a daunting tasks among educators. @dstnhps discussed the following aspects to consider in integrating HPS in the curriculum: "The Inevitability of HPS in the Curriculum", "Naive Philosophy of science", "Close Mind or Open Mind", "History of Science as Subversive", "Contextual Approach: Is Content Knowledge HPS-free?", "Paradox of HPS in Science Teaching", "A Role of History: The Bias of Science Textbooks", "Science and Subjectivity", "Should the History of Science be Rated X?", "Realism vs Instrumentalism". With all these, he posits that this will "convey a picture of science as the highest achievements of the human intellect" spurring students and teachers to appreciate science and mathematics leading to 'enriched culture and human lives' [@strhps].
+
+We cannot teach the content of science and mathematics without explicitly addressing issues about these subjects. For example, how will you teach the content of calculus -- abstract in its notations -- and let your students have a sense of purpose in studying it without discussing its origins, the different mathematicians who contributed to its development and their successes in the field, the issues about it that were settled through the years, etc.? This is where HPS comes in; making it inevitable in the curriculum. Thus, the need to for teachers to study HPS.
+
+Another issue pointed out by the article is the naive philosophy of science. This can be said with respect to the mutability of science. Science and its ever changing body of beliefs seems to be the reason why people have become open-minded about miraculous or paranormal phenomena instead of dogmatic dismissal of these phenomena. Thus, the need to emphasize that the conclusions we derive from the fact that science is historically changeable should manifest when incorporating HPS in the curriculum.
+
+The issue of closed mind or open mind in the article is about the education system unknowingly promoting closed mind that is convergent thinking; by teaching students the correct answer to given questions. The education system should promote divergent thinking and critism; aspects that are evident in HPS.
+
+Another issue in teaching science as pointed out by the article is "history of science as subversive". One might see in science a model of objectivity and rationality. However, history will reveal that there are mathematicians, like Isaac Newton, who attributes mathematics to God. Thus, there is a need to dismiss matters that are not scientific -- matters of pseudo-science or religion -- when discussing HPS in teaching science subjects.
+
+The article furthermore points out that HPS themes should be integrated into the curriculum as an intrinsic part.
+
+
+
+
+
+2. What are the traces of HPS in the development of curriculums (basic & higher education)?
