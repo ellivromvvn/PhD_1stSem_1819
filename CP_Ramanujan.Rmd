@@ -1,0 +1,38 @@
+---
+title: 'Critique Paper: The Man Who Knew Infinity'
+author:
+  - Orville D. Hombrebueno
+  - "Ph.D. in Science Education: Mathematics"
+date: "October 19, 2018"
+output:
+  word_document:
+    reference_docx: CP_Ramanujan_my_style.docx
+bibliography: ["biblio.bib"]
+biblio-style: "apalike"
+---
+# Introduction
+
+As a math teacher, there is nothing quite amusing and inspiring than watching a movie -- based on true events -- about a famous mathematician. In this case, the life story of Mr. Srinivas Ramanujan. I have encountered him in teaching number theory. Little did I know that his story is quite a story. It is a tragic one. It showed his struggles with his culture and beliefs, his being Indian, his being "ill-educated", and his sickness which, after his success took his life. Nonetheless, the movie showed how he succeeded despite all of these struggles. And from these, I was trully inspired.
+
+# Issues
+
+In explaining his notes to his wife, he said that it is "like a painting with colors you cannot see." He further explained to his wife that there are patterns in everything -- the color in light, the reflections on water -- and that these patterns reveal themselves in mathematics in the most incredible form and that it is quite beautiful. This is a Pythagorean way of seeing things.
+
+His ideas and formulae -- brilliant they may be -- lacked proofs and this is what Mr. Hardy and Mr. Littlewood wanted him to learn and incorporate in his works. This proved to be a difficult task for Mr. Ramanujan. Mr. Littlewood speculated that Mr. Ramanujan did not like proofs because they may be disagreeable to his formulae. Mr. Ramanujan think that doing proofs is a waste of time. He argues that he has the formulas and that the only thing left to do is publish his claims. This is an issue of HPS. According to @dstnhps, proofs or explanations are central to the philosophy of science and that proofs determine whether a claim belongs to science or pseudo-science. Mr. Ramanujan who did not have any degree and who I suppose don't have any background on HPS did not know the importance and the place of proofs in his works, formulae and claims.
+
+Furthermore, having no proofs for a claim is in contrast with Aristotle's scientific inquiry approach. Formulae with no proofs or claims with no proofs are merely intuitions as argued by Mr. Hardy. He continued by emphasizing the need of proofs to hold these formulae and claims accountable.
+
+To reconcile this conflict, Mr. Hardy gave a brief lecture about Euler and Jacobi. He even pointed out that Mr. Ramanujan is as good as these two mathematicians. He added that what they have in common is the love of form; an art unto itself. He added that like all art, it reflects truth. However, he emphasized that this art that he posses means nothing to those who doubt him unless he shows or provides proofs for this art. He also brought Mr. Ramanujan to the Wren library and showed him Mr. Isaac Newton's Principia Mathematica. He pointed out that just as Newton represents the physical aspect of their work, Mr. Ramanujan's notebooks represent the abstract. He then pointed out the importance of proofs just as it is important to Newton's work. He then motivated Mr. Ramanujan that with proofs, his notebooks might one day find their place in the Wren library.  Moreover, he also provided some proofs to Ramanujan's claim on highly composite numbers and published it just to show how important proofs are.
+
+In a different light, Mr. Ramanujan said that he gets his formulae from his god when he sleeps and pray. Mr. Ramanujan can be quoted in the movie saying "An equation has no meaning to me unless it expresses a thought of God". This raises the issue of history of science as subversive [@dstnhps]. This part of the movie might prove to be conflicting to someone who sees in science a model of objectivity and rationality. Nonetheless, the movie was able to make its effect subtle by attributing this aspect of Mr. Ramanujan to his profound and invincible originality. In addition, Mr. Hardy confirmed what Mr. Ramanujan said -- despite his being an atheist -- as their justification in their pursuit for pure mathematics.
+
+# Conclusion
+
+Mr. Ramanujan went through a lot of hardships in his short lived life. Despite all of these things, he was able to pursue what he believed and earned a place amongst the greatest mathematicians in history. Being poor and having no degree, his persistence and ego has led him to find a job as a clerk. He then broke their tradition as Brahmins by cutting his hair and travelling overseas to publish his ideas. 
+
+
+# Recommendations
+
+
+
+# References
