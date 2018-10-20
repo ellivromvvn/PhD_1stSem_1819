@@ -1,5 +1,6 @@
 ---
-title: 'Critique Paper: The Man Who Knew Infinity'
+title: 'Critique Paper in History and Philosophy of Science and Technology Education'
+subtitle: 'The Man Who Knew Infinity'
 author:
   - Orville D. Hombrebueno
   - "Ph.D. in Science Education: Mathematics"
@@ -12,7 +13,7 @@ biblio-style: "apalike"
 ---
 # Introduction
 
-As a math teacher, there is nothing quite amusing and inspiring than watching a movie -- based on true events -- about a famous mathematician. In this case, the life story of Mr. Srinivas Ramanujan. I have encountered him in teaching number theory. Little did I know that his story is quite a story. It is a tragic one. It showed his struggles with his culture and beliefs, his being Indian, his being "ill-educated", and his sickness which, after his success took his life. Nonetheless, the movie showed how he succeeded despite all of these struggles. And from these, I was trully inspired.
+As a math teacher, there is nothing quite amusing and inspiring than watching a movie -- based on true events -- about a famous mathematician. In this case, the life story of Mr. Srinivasa Ramanujan. I have encountered him in teaching number theory. Little did I know that his story is quite a story. It is a tragic one. It showed his struggles with his culture and beliefs, his being Indian, his being "ill-educated", and his sickness which, after his success took his life. Nonetheless, the movie showed how he succeeded despite all of these struggles. And from these, I was truly inspired.
 
 # Issues
 
@@ -26,13 +27,15 @@ To reconcile this conflict, Mr. Hardy gave a brief lecture about Euler and Jacob
 
 In a different light, Mr. Ramanujan said that he gets his formulae from his god when he sleeps and pray. Mr. Ramanujan can be quoted in the movie saying "An equation has no meaning to me unless it expresses a thought of God". This raises the issue of history of science as subversive [@dstnhps]. This part of the movie might prove to be conflicting to someone who sees in science a model of objectivity and rationality. Nonetheless, the movie was able to make its effect subtle by attributing this aspect of Mr. Ramanujan to his profound and invincible originality. In addition, Mr. Hardy confirmed what Mr. Ramanujan said -- despite his being an atheist -- as their justification in their pursuit for pure mathematics.
 
+On the other hand, the film captured much of the spirit of mathematical research in the past. The mathematician is guided by curiosity and seeks beautiful and elegant connections between abstract concepts. These explorations typically involve some experimentation, but with ideas and symbols rather than physical things. There are usually lots of mistakes and dead ends. Great persistence is needed. If a new connection is believed to have been found, there is a unique intellectual thrill and maybe a sense of awe. But the game is not over. A proof – a complete, verifiable, logical justification – must be built. Constructing the proof can be difficult and often takes a lot longer than the initial discovery. It is tempting to move on to try to discover other connections, rather than work on the proofs to support the ones already found, but we must learn to persist until the proof is finished. This however brings out the issue of realism vs instrumentalism [@dstnhps]. This spirit of mathematical research is the instrumentalism approach; being successful in explaining a discovery through theorizing. It has been a successful approach in the past. But now, we need not just proofs but we need to see this in the physical world through models, manipulate this models and see its practical applications; the realism approach. Nonetheless, the discipline and intricacies of doing mathematical research is what I appreciate most in the movie.
+
 # Conclusion
 
-Mr. Ramanujan went through a lot of hardships in his short lived life. Despite all of these things, he was able to pursue what he believed and earned a place amongst the greatest mathematicians in history. Being poor and having no degree, his persistence and ego has led him to find a job as a clerk. He then broke their tradition as Brahmins by cutting his hair and travelling overseas to publish his ideas. In Cambridge Trinity College, he worked with Mr. Hardy who taught him the rigor of proofs which led to the publication of his formulae and his becoming a Fellow of the Royal Society and a Fellow of Trinity College.
+Mr. Ramanujan went through a lot of hardships in his short lived life. Despite all of these things, he was able to pursue what he believed and earned a place amongst the greatest mathematicians in history. Being poor and having no degree, his persistence and ego has led him to find a job as a clerk. Excelling in mathematics He then broke their tradition by cutting his hair and travelling overseas eager to publish his ideas. In Cambridge Trinity College, he worked with Mr. Hardy and Mr. Littlewood who taught him the rigor of proofs which led to the publication of his formulae and his becoming a Fellow of the Royal Society and a Fellow of Trinity College.
 
 # Recommendations
 
-The movie has made me appreciate pure mathematics. I have always evaded pure mathematics because of its abstract nature and the rigor of understanding and writing proofs. Nonetheless, I have started reading books on mathematical proofs and I am planning to delve into pure mathematics; an effect of the movie to me.
+The movie has made me appreciate pure mathematics. I have always evaded pure mathematics because of its abstract nature and the rigor of understanding and writing proofs. I appreciate most how the movie captured the discipline and intricacies of mathematical research. I have started reading books on mathematical proofs and I am planning to delve into pure mathematics; an effect of the film to me.
 
 It has also made me realize and appreciate the importance of HPS in teaching and learning mathematics. The history and philosophy of mathematics that can be seen in the life story of Mr. Ramanujan and that of other mathematicians can spur appreciation and deeper understanding of mathematics. I would recommend my students to watch the film. The film showed how important proofs are to formulae, just as how critical thinking is important to science.
 
