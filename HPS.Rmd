@@ -20,7 +20,7 @@ We cannot teach the content of science and mathematics without explicitly addres
 
 Another aspect of HPS in the article is the naive philosophy of science. This can be said with respect to the mutability of science. Science and its ever changing body of beliefs seem to be the reasons why people have become open-minded about miraculous or paranormal phenomena instead of dogmatic dismissal of these phenomena. This should not be the case. There is a need to emphasize that there are conclusions we can draw from the fact that science is historically changeable when incorporating HPS in science teaching.
 
-The issue of closed mind or open mind in the article is about the education system unknowingly promoting closed mind or convergent thinking; teaching students the correct answer to given questions. The education system should promote divergent thinking and critism; a central feature of science which can only be brought out by integrating HPS.
+The issue of closed mind or open mind in the article is about the education system unknowingly promoting closed mind or convergent thinking; teaching students the correct answer to given questions. The education system should promote divergent thinking and criticism; a central feature of science which can only be brought out by integrating HPS.
 
 In science teaching, the article also explained "history of science as subversive". One might see in science a model of objectivity and rationality. However, history reveals that there were mathematicians, like Isaac Newton, who attributed mathematics to God. This will in effect undermine this model of objectivity and rationality that one sees in science. Thus, there is a need to dismiss matters that are not scientific -- matters of pseudo-science or religion -- when discussing HPS in teaching science subjects. One can consider the history of science be rated X or censored as discussed in the last parts of the article.
 
@@ -28,7 +28,7 @@ Another discussion in the article is that HPS themes should be integrated into t
 
 In addition, HPS being good as it may seem, the article pointed out that theories of HPS are controversial and changeable. This might make someone think not to teach HPS explicitly in a science subject to do away with these controversies. However, this will just weaken the content of the subject. This is the paradox of HPS in science teaching. In teaching HPS explicitly in a science subject, the teacher should make his or her students realize that controversy and change is innate in science and that this is the reality of science and practicing science. This will help students accept, appreciate and learn from these controversies and changes in science and not be dismayed from it.
 
-The article also mentioned the role of history in undermining the bias of science textbooks. Try to imagine being confined to use only one textbook in teaching a science subject, one can simply say that there is bias. Whether this book is writen by a renowned outstanding scientist, he would only be speaking for himself and his generation. History will help us compare the topic to the same topic from various generations and authors thus brighing out the best learning for that topic.
+The article also mentioned the role of history in undermining the bias of science textbooks. Try to imagine being confined to use only one textbook in teaching a science subject, one can simply say that there is bias. Whether this book is written by a renowned outstanding scientist, he would only be speaking for himself and his generation. History will help us compare the topic to the same topic from various generations and authors thus bringing out the best learning for that topic.
 
 Furthermore, one may view science as the product of psychological and social forces rather that of rational thinking. Now, this is in contrast with science being fundamentally objective. The article points out the need to reconcile these things -- science and subjectivity -- since there is a need to acknowledge also the non-rational elements in science. The article emphasized the difficulty of the task.
 
@@ -36,6 +36,8 @@ There is also the issue of realism vs instrumentalism. The article cited that th
 
 Finally, the article concludes that all of these issues on HPS have a direct bearing to the manner and substance of science teaching. Thus, considering all of these things makes it daunting on the part of educators to teach science and mathematics. 
 
-2. What are the traces of HPS in the development of curriculums (basic & higher education)?
+2. What are the traces of HPS in the development of curricula (basic & higher education)?
+
+According to @gened, the 
 
 # References
