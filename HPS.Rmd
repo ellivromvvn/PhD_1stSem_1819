@@ -38,6 +38,10 @@ Finally, the article concludes that all of these issues on HPS have a direct bea
 
 2. What are the traces of HPS in the development of curricula (basic & higher education)?
 
-According to @gened, the 
+In the higher education, HPS is explicit in the curriculum for general education. In the @gened, the teaching of the general education subject Science, Technology and Society is described to tackle scientific and technological developments throughout human history. Moreover, the general education curriculum in the country is explicitly carrying out the liberal nature of general education -- an aspect of HPS pointed by @strhps.
+
+In the BS Math and BS Applied Math programs, HPS is all over the curriculum for both programs. Program goals for these programs include that graduates are expected to develop deeper appreciation and understanding of the importance and application of mathematics through out history and the modern world [@bsmath]. Most of the subjects in these programs start with a brief history of the subject. Philosophy of mathematics is explicitly emphasized in every subject.
+
+
 
 # References
