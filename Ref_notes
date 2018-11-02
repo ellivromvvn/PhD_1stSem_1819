@@ -60,3 +60,31 @@ and enhance student learning.
 
 carter18
 
+This paper introduces a new RStudio addin, called "Simple Course Management System," that facilitates the exchange, grading, and real-time supervision of student work in RStudio.
+
+In Fall 2016, Dr. Carter chose R as the software for use in a discrete mathematics course and chose to use RStudio Server Professional in the cloud, because doing so brought several benefits. The aim was to make it easy for
+1. Students to submit completed assignments to the instructor;
+2. Students to share work with teammates;
+3. The instructor to distribute course materials to students;
+4. The instructor to collect completed assignments from the students;
+5. The instructor to return graded assignments to the students; and
+6. The instructor to monitor student work on in-class exercises in real time.
+
+Dr. Carter created an RStudio addin that an instructor can install into his or her RStudio Server Professional account, and it provides a graphical interface that allows the instructor to
+1. Distribute a file to all students in the course;
+2. Collect a completed assignment from all students in the course;
+3. Return a graded assignment to all students in the course; and
+4. Monitor all copies of a file being worked on by all students in the course.
+Students do not need to install anything; only the instructor needs to install the addin.
+
+Distributing Files to Students
+
+Collecting Student Work
+
+Providing Feedback
+
+Returning Graded Files to Students
+
+Live Monitoring of In-Class Work
+
+There were negative and positive feedback about the addin from the students and instructor.
