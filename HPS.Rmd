@@ -44,7 +44,4 @@ HPS is explicit in the curriculum for general education. In the @gened, the teac
 
 In the BS Math and BS Applied Math programs, HPS is all over the curriculum for both programs. Their program goals include that graduates are expected to develop deeper appreciation and understanding of the importance and application of mathematics throughout history and the modern world [@bsmath]. Most of the math subjects in these programs start with a brief history of the subject. Nonetheless, philosophy of mathematics is explicit in the program outcomes.
 
-
-
-
 # References
