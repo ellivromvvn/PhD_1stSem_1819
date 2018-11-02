@@ -1,0 +1,11 @@
+---
+output:
+  word_document:
+    reference_docx: HPS_my_style.docx
+bibliography: ["biblio.bib"]
+biblio-style: "apa"
+---
+
+@carter18 and @wood18 said that
+
+# Reference
