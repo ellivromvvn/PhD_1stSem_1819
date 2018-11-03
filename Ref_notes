@@ -127,3 +127,24 @@ analyses, and check their results.
 
 Now we face the challenges of “Big Data” and the need
 for data-related skills.
+
+
+doi16
+
+Computer technology can greatly enhance statistics education by illustrating fundamental concepts such as randomness, sampling, and variability through computer simulations and visualizations.
+Studies have shown that such technological enhancements to statistics instruction signicantly improve student performance,
+as measured by pretest and posttest analyses.
+
+In these situations the instructor is left to consider building his/her own teaching tool
+applet. But this is not a trivial task. This can require knowledge in Java, Javascript,
+HTML, CSS, and PHP languages. The time required to learn the necessary languages can
+be a suficient obstacle in keeping an instructor from creating applets.
+
+An alternative method to create web-based teaching tool applications is provided by Shiny, a recent technology created by RStudio.
+
+With Shiny, instructors can build a teaching tool that is interactive, dynamic, user-friendly, visually appealing, and, with similar functionality to Java/Javascript applets; the only requirement is some familiarity in R.
+
+Overall we believe it is quite feasible for anyone with some familiarity with R to be able
+to create Shiny apps. One does not need to be at the level of a master R developer. In
+fact, two of the co-authors were undergraduate statistics students in our department as
+we developed our collection of Shiny apps.

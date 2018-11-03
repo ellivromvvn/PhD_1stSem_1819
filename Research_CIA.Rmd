@@ -2,10 +2,10 @@
 output:
   word_document:
     reference_docx: HPS_my_style.docx
-bibliography: ["biblio.bib"]
+bibliography: biblio.bib
 csl: apa.csl
 ---
 
-@carter18 and @wood18 said that @horton15 and @doi16
+
 
 # Reference
