@@ -8,11 +8,17 @@ csl: apa.csl
 
 ## Rationale
 
-@gened @bsmath @hbook @qa
+The impact of technology in teaching statistics
+
+Reproducible
 
 The gap between statistical practice and statistics education.
 
 @zieffler18 pointed out that New Zealand adopted the GAISE report and has now benefited. 
+
+R and RStudio
+
+Efforts in the Philippines
 
 ## Statement of the Problem
 
