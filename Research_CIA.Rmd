@@ -1,11 +1,67 @@
 ---
-output:
-  word_document:
-    reference_docx: HPS_my_style.docx
+output: word_document
 bibliography: biblio.bib
 csl: apa.csl
 ---
 
 # Introduction
+
+## Rationale
+
+
+
+## Statement of the Problem
+
+
+
+## Statement of the Hypothesis
+
+
+
+## Significance of the Study
+
+
+
+## Research Framework
+
+
+
+## Scope 
+
+
+
+## Definition of Terms
+
+
+
+# Review of Related Literature and Studies
+
+
+
+# Methodology
+
+## Research Design
+
+
+
+## Research Environment
+
+
+
+## Respondents
+
+
+
+## Research Instruments
+
+
+
+## Data Gathering Procedure
+
+
+
+## Data Analysis
+
+
 
 # Reference
