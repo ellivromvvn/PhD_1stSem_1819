@@ -8,7 +8,11 @@ csl: apa.csl
 
 ## Rationale
 
+@gened @bsmath @hbook @qa
 
+The gap between statistical practice and statistics education.
+
+@zieffler18 pointed out that New Zealand adopted the GAISE report and has now benefited. 
 
 ## Statement of the Problem
 
