@@ -7,12 +7,13 @@ output: slidy_presentation
 knitr::opts_chunk$set(comment = '')
 knitr::opts_chunk$set(prompt = T)
 ```
-# Outline
+**Outline**
+
 - Introduction to **R**
   1. The **R** Environment
   2. RStudio
   3. Basic Commands
-
+  
 # Introduction to **R**
 
 ## The **R** Environment  
@@ -39,7 +40,38 @@ knitr::opts_chunk$set(prompt = T)
 - The **Help** tab is an output location for help commands and help search window.
 - The **Viewer** tab is an advanced tab for local web content.
 
+## Data Type and Objects
+- Scalars -- atomic quantity and can hold only one value at a time.  
+Examples: number, logical value, character(string)
+- Vector -- a sequence of data elements of the same basic type.
+- Matrix -- a collection of data elements in a rectangular layout.
+- Data Frame -- more general than a matrix, in that different columns can have different basic types.
+- List -- a generic vector containing other objects.
+
 ## Basic Commands
+- We can assign values in **R** using `<-` operator.
+
+*Example*
+ 
+```{r}
+x <- 143
+x
+```
+
+```{r}
+y <- 198
+y
+```
+
+```{r}
+x + y
+```
+
+```{r}
+z <- x + y
+z
+```
+
 - **R** uses *functions* to perform operations. To run a function called `funcname`, we type
 
 `funcname(input1, input2)`
@@ -52,10 +84,8 @@ x <- c(1, 4, 3, 4, 4)
 x
 ```
 
-- Note that the `>` is not part of the command; rather, it is printed by **R** to indicate that it is ready for another command to be entered.
+- Note that the prompt, `>`, is not part of the command; rather, it is printed by **R** to indicate that it is ready for another command to be entered.
 - Hitting the *up arrow key* multiple times will display the previous commands, which can then be edited.
 - Typing `?funcname` will cause **R** to open a new help file window with additional information about the function `funcname`.
+- a `+` sign replacing `>` indicates that your code is not complete and that **R** is asking you to complete your code.
 
-## Data Type and Objects
-- Scalars -- atomic quantity and can hold only one value at a time.  
-Examples: number, logical value, character(string)

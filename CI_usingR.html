@@ -430,8 +430,9 @@ list-style-type: none;
 Orville D. Hombrebueno
   </p>
 </div>
-<div id="outline" class="slide section level1">
-<h1>Outline</h1>
+<div class="slide section level2">
+
+<p><strong>Outline</strong></p>
 <ul>
 <li>Introduction to <strong>R</strong>
 <ol style="list-style-type: decimal">
@@ -441,9 +442,8 @@ Orville D. Hombrebueno
 </ol></li>
 </ul>
 </div>
-<div id="introduction-to-r" class="slide section level1">
-<h1>Introduction to <strong>R</strong></h1>
-<h2 id="the-r-environment">The <strong>R</strong> Environment</h2>
+<div id="introduction-to-r" class="title-slide slide section level1"><h1>Introduction to <strong>R</strong></h1></div><div id="the-r-environment" class="slide section level2">
+<h1>The <strong>R</strong> Environment</h1>
 <ul>
 <li><strong>R</strong> is an integrated suite of software facilities for data manipulation, calculation and graphical display.</li>
 <li>It is an open-source software environment for statistical computing and graphics.</li>
@@ -452,7 +452,8 @@ Orville D. Hombrebueno
 <li><strong>R</strong> is an <em>expression language</em> with a very simple syntax. It is <em>case sensitive</em>.</li>
 <li>The entities that <strong>R</strong> creates and manipulates are known as <em>objects</em>. These may be variables, arrays of numbers, character strings, functions, or more general structures built from such components.</li>
 </ul>
-<h2 id="rstudio">RStudio</h2>
+</div><div id="rstudio" class="slide section level2">
+<h1>RStudio</h1>
 <ul>
 <li>R Studio provides a graphical interface for <strong>R</strong>. The components of the environment are all nicely integrated into a four-panel layout.</li>
 </ul>
@@ -469,25 +470,47 @@ Orville D. Hombrebueno
 <li>The <strong>Help</strong> tab is an output location for help commands and help search window.</li>
 <li>The <strong>Viewer</strong> tab is an advanced tab for local web content.</li>
 </ul>
-<h2 id="basic-commands">Basic Commands</h2>
+</div><div id="data-type-and-objects" class="slide section level2">
+<h1>Data Type and Objects</h1>
+<ul>
+<li>Scalars – atomic quantity and can hold only one value at a time.<br />
+Examples: number, logical value, character(string)</li>
+<li>Vector – a sequence of data elements of the same basic type.</li>
+<li>Matrix – a collection of data elements in a rectangular layout.</li>
+<li>Data Frame – more general than a matrix, in that different columns can have different basic types.</li>
+<li>List – a generic vector containing other objects.</li>
+</ul>
+</div><div id="basic-commands" class="slide section level2">
+<h1>Basic Commands</h1>
+<ul>
+<li>We can assign values in <strong>R</strong> using <code>&lt;-</code> operator.</li>
+</ul>
+<p><em>Example</em></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>x &lt;-<span class="st"> </span><span class="dv">143</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="op">&gt;</span><span class="st"> </span>x</a></code></pre></div>
+<pre><code>[1] 143</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>y &lt;-<span class="st"> </span><span class="dv">198</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="op">&gt;</span><span class="st"> </span>y</a></code></pre></div>
+<pre><code>[1] 198</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>x <span class="op">+</span><span class="st"> </span>y</a></code></pre></div>
+<pre><code>[1] 341</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>z &lt;-<span class="st"> </span>x <span class="op">+</span><span class="st"> </span>y</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="op">&gt;</span><span class="st"> </span>z</a></code></pre></div>
+<pre><code>[1] 341</code></pre>
 <ul>
 <li><strong>R</strong> uses <em>functions</em> to perform operations. To run a function called <code>funcname</code>, we type</li>
 </ul>
 <p><code>funcname(input1, input2)</code></p>
 <p><em>Example</em></p>
 <p>We use the function <code>c()</code> to create a vector of numbers</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">4</span>)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="op">&gt;</span><span class="st"> </span>x</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="op">&gt;</span><span class="st"> </span>x</a></code></pre></div>
 <pre><code>[1] 1 4 3 4 4</code></pre>
 <ul>
-<li>Note that the <code>&gt;</code> is not part of the command; rather, it is printed by <strong>R</strong> to indicate that it is ready for another command to be entered.</li>
+<li>Note that the prompt, <code>&gt;</code>, is not part of the command; rather, it is printed by <strong>R</strong> to indicate that it is ready for another command to be entered.</li>
 <li>Hitting the <em>up arrow key</em> multiple times will display the previous commands, which can then be edited.</li>
 <li>Typing <code>?funcname</code> will cause <strong>R</strong> to open a new help file window with additional information about the function <code>funcname</code>.</li>
-</ul>
-<h2 id="data-type-and-objects">Data Type and Objects</h2>
-<ul>
-<li>Scalars – atomic quantity and can hold only one value at a time.<br />
-Examples: number, logical value, character(string)</li>
+<li>a <code>+</code> sign replacing <code>&gt;</code> indicates that your code is not complete and that <strong>R</strong> is asking you to complete your code.</li>
 </ul>
 </div>
 
