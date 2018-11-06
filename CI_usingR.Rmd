@@ -1,0 +1,61 @@
+---
+title: "Confidence Intervals Using R"
+author: Orville D. Hombrebueno
+output: slidy_presentation
+---
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = '')
+knitr::opts_chunk$set(prompt = T)
+```
+# Outline
+- Introduction to **R**
+  1. The **R** Environment
+  2. RStudio
+  3. Basic Commands
+
+# Introduction to **R**
+
+## The **R** Environment  
+- **R** is an integrated suite of software facilities for data manipulation, calculation and graphical display.
+- It is an open-source software environment for statistical computing and graphics.
+- It is an environment within which many classical and modern statistical techniques have been implemented.
+- A few of these techniques are built into the base **R** environment, but many are supplied as packages.
+- **R** is an *expression language* with a very simple syntax. It is *case sensitive*.
+- The entities that **R** creates and manipulates are known as *objects*. These may be variables, arrays of numbers, character strings, functions, or more general structures built from such components.
+
+## RStudio
+- R Studio provides a graphical interface for **R**. The components of the environment are all nicely integrated into a four-panel layout.
+
+![](RStudio_interface.png)
+
+- The RStudio provides most of the desired features of **R** in an Integrated Development Environment (IDE).
+- The **console** provides the command-line interface for interactive use of **R**. This is where users issue commands for **R** to evaluate.
+- The **source** tab is a built-in text editor.
+- The **Environment** tab is an interactive list of **R** objects.
+- The **Files** tab displays the files and subdirectories of a given directory.
+- Display of graphics is rendered in the **Plots** tab.
+- RStudio keeps a stack of past commands and allows one to scroll through them easily. This can be done using the up or down keys. In addition, the **History** tab allows one to scroll through past commands.
+- The **Packages** tab allows users to effortlessly load, install, update, and/or delete packages in the library of packages.
+- The **Help** tab is an output location for help commands and help search window.
+- The **Viewer** tab is an advanced tab for local web content.
+
+## Basic Commands
+- **R** uses *functions* to perform operations. To run a function called `funcname`, we type
+
+`funcname(input1, input2)`
+
+*Example*
+
+We use the function `c()` to create a vector of numbers
+```{r}
+x <- c(1, 4, 3, 4, 4)
+x
+```
+
+- Note that the `>` is not part of the command; rather, it is printed by **R** to indicate that it is ready for another command to be entered.
+- Hitting the *up arrow key* multiple times will display the previous commands, which can then be edited.
+- Typing `?funcname` will cause **R** to open a new help file window with additional information about the function `funcname`.
+
+## Data Type and Objects
+- Scalars -- atomic quantity and can hold only one value at a time.  
+Examples: number, logical value, character(string)
