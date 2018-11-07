@@ -1,7 +1,13 @@
 ---
-title: "Confidence Intervals Using R"
-author: Orville D. Hombrebueno
-output: slidy_presentation
+title: Confidence Intervals Using R
+author: |
+  | **Orville D. Hombrebueno**
+  | odhombrebueno@nvsu.edu.ph
+  |
+  | **College of Teacher Education**
+output: 
+  slidy_presentation:
+    footer: "Inferential Statistics, 1st Semester, S.Y. 2018-2019"
 ---
 ```{r include=FALSE}
 knitr::opts_chunk$set(comment = '')
