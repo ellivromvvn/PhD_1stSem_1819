@@ -49,6 +49,8 @@ Examples: number, logical value, character(string)
 - List -- a generic vector containing other objects.
 
 ## Basic Commands
+- Before everything else, set your working directory. Setting the working directory is choosing a folder to save your work. You can set the working directory using the File tab or the function `setwd()'.
+- Typing `?funcname` will cause **R** to open a new help file window with additional information about the function `funcname`
 - We can assign values in **R** using `<-` operator.
 
 *Example*
@@ -86,6 +88,73 @@ x
 
 - Note that the prompt, `>`, is not part of the command; rather, it is printed by **R** to indicate that it is ready for another command to be entered.
 - Hitting the *up arrow key* multiple times will display the previous commands, which can then be edited.
-- Typing `?funcname` will cause **R** to open a new help file window with additional information about the function `funcname`.
 - a `+` sign replacing `>` indicates that your code is not complete and that **R** is asking you to complete your code.
+
+## Creating Functions in R
+- We can write functions in R!
+
+*Example*
+
+Suppose we want to write a function for average. The formula for average is
+
+$$average=\frac{\sum{x}}{n}$$
+where $x$ is a vector and $n$ is a scalar containing the number of elements in $x$.
+
+```{r}
+average <- function(x){
+  sum(x)/length(x)
+}
+```
+
+```{r}
+y <- c(4, 3, 5, 1, 7)
+```
+
+```{r}
+average(y)
+```
+
+or
+
+```{r}
+average <- function(x){
+  a <- sum(x)
+  b <- length(x)
+  c <- a/b
+  return(c)
+}
+```
+
+```{r}
+average(y)
+```
+
+or
+
+```{r}
+mean(y)
+```
+
+# Confidence Intervals for the Mean (Large Samples)
+
+## Finding a Confidence Interval for a Population Mean
+
+1. Find the sample statistics $n$ and $\bar{x}$.  
+$$\bar{x}=\frac{\sum{x}}{n}$$  
+In **R** we have the function `mean()`.
+
+2. Specify $\sigma$, if known. Otherwise, if $n\ge 30$, find the sample standard deviation $s$ and use it as an estimate for $\sigma$.  
+$$s=\sqrt{\frac{\sum{(x-\bar{x})^2}}{n-1}}$$  
+In **R** we have the function `sd()`.
+
+3. Find the critical value $z_{c}$ that corresponds to the given level of confidence.
+
+*Example*
+
+For $c=95\%\;\text{ or }\; 0.95$  
+```{r}
+qnorm((1+0.95)/2)
+```
+
+4. Find the margin of error $E$.
 

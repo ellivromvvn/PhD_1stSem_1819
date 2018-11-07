@@ -483,6 +483,8 @@ Examples: number, logical value, character(string)</li>
 </div><div id="basic-commands" class="slide section level2">
 <h1>Basic Commands</h1>
 <ul>
+<li>Before everything else, set your working directory. Setting the working directory is choosing a folder to save your work. You can set the working directory using the File tab or the function `setwd()’.</li>
+<li>Typing <code>?funcname</code> will cause <strong>R</strong> to open a new help file window with additional information about the function <code>funcname</code></li>
 <li>We can assign values in <strong>R</strong> using <code>&lt;-</code> operator.</li>
 </ul>
 <p><em>Example</em></p>
@@ -509,9 +511,50 @@ Examples: number, logical value, character(string)</li>
 <ul>
 <li>Note that the prompt, <code>&gt;</code>, is not part of the command; rather, it is printed by <strong>R</strong> to indicate that it is ready for another command to be entered.</li>
 <li>Hitting the <em>up arrow key</em> multiple times will display the previous commands, which can then be edited.</li>
-<li>Typing <code>?funcname</code> will cause <strong>R</strong> to open a new help file window with additional information about the function <code>funcname</code>.</li>
 <li>a <code>+</code> sign replacing <code>&gt;</code> indicates that your code is not complete and that <strong>R</strong> is asking you to complete your code.</li>
 </ul>
+</div><div id="creating-functions-in-r" class="slide section level2">
+<h1>Creating Functions in R</h1>
+<ul>
+<li>We can write functions in R!</li>
+</ul>
+<p><em>Example</em></p>
+<p>Suppose we want to write a function for average. The formula for average is</p>
+<p><span class="math display">\[average=\frac{\sum{x}}{n}\]</span> where <span class="math inline">\(x\)</span> is a vector and <span class="math inline">\(n\)</span> is a scalar containing the number of elements in <span class="math inline">\(x\)</span>.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>average &lt;-<span class="st"> </span><span class="cf">function</span>(x){</a>
+<a class="sourceLine" id="cb11-2" data-line-number="2"><span class="op">+</span><span class="st">   </span><span class="kw">sum</span>(x)<span class="op">/</span><span class="kw">length</span>(x)</a>
+<a class="sourceLine" id="cb11-3" data-line-number="3"><span class="op">+</span><span class="st"> </span>}</a></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">1</span>, <span class="dv">7</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">average</span>(y)</a></code></pre></div>
+<pre><code>[1] 4</code></pre>
+<p>or</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>average &lt;-<span class="st"> </span><span class="cf">function</span>(x){</a>
+<a class="sourceLine" id="cb15-2" data-line-number="2"><span class="op">+</span><span class="st">   </span>a &lt;-<span class="st"> </span><span class="kw">sum</span>(x)</a>
+<a class="sourceLine" id="cb15-3" data-line-number="3"><span class="op">+</span><span class="st">   </span>b &lt;-<span class="st"> </span><span class="kw">length</span>(x)</a>
+<a class="sourceLine" id="cb15-4" data-line-number="4"><span class="op">+</span><span class="st">   </span>c &lt;-<span class="st"> </span>a<span class="op">/</span>b</a>
+<a class="sourceLine" id="cb15-5" data-line-number="5"><span class="op">+</span><span class="st">   </span><span class="kw">return</span>(c)</a>
+<a class="sourceLine" id="cb15-6" data-line-number="6"><span class="op">+</span><span class="st"> </span>}</a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">average</span>(y)</a></code></pre></div>
+<pre><code>[1] 4</code></pre>
+<p>or</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">mean</span>(y)</a></code></pre></div>
+<pre><code>[1] 4</code></pre>
+</div>
+<div id="confidence-intervals-for-the-mean-large-samples" class="title-slide slide section level1"><h1>Confidence Intervals for the Mean (Large Samples)</h1></div><div id="finding-a-confidence-interval-for-a-population-mean" class="slide section level2">
+<h1>Finding a Confidence Interval for a Population Mean</h1>
+<ol style="list-style-type: decimal">
+<li><p>Find the sample statistics <span class="math inline">\(n\)</span> and <span class="math inline">\(\bar{x}\)</span>.<br />
+<span class="math display">\[\bar{x}=\frac{\sum{x}}{n}\]</span><br />
+in <strong>R</strong> we have the function <code>mean()</code>.</p></li>
+<li><p>Specify <span class="math inline">\(\sigma\)</span>, if known. Otherwise, if <span class="math inline">\(n\ge 30\)</span>, find the sample standard deviation <span class="math inline">\(s\)</span> and use it as an estimate for <span class="math inline">\(\sigma\)</span>.<br />
+<span class="math display">\[s=\sqrt{\frac{\sum{(x-\bar{x})^2}}{n-1}}\]</span><br />
+In <strong>R</strong> we have the function <code>sd()</code>.</p></li>
+<li><p>Find the critical value <span class="math inline">\(z_{c}\)</span> that corresponds to the given level of confidence.</p></li>
+</ol>
+<p><em>Example</em></p>
+<p>For <span class="math inline">\(c=95\%\;\text{ or }\; 0.95\)</span></p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">qnorm</span>((<span class="dv">1</span><span class="fl">+0.95</span>)<span class="op">/</span><span class="dv">2</span>)</a></code></pre></div>
+<pre><code>[1] 1.959964</code></pre>
 </div>
 
   <!-- dynamically load mathjax for compatibility with self-contained -->
