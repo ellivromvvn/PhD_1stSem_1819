@@ -438,7 +438,26 @@ Orville D. Hombrebueno
 <ol style="list-style-type: decimal">
 <li>The <strong>R</strong> Environment</li>
 <li>RStudio</li>
+<li>Data Type and Objects</li>
 <li>Basic Commands</li>
+<li>Creating Functions in R</li>
+</ol></li>
+<li>Confidence Intervals for the Mean (Large Samples)
+<ol style="list-style-type: decimal">
+<li>Finding a Confidence Interval for a Population Mean</li>
+</ol></li>
+<li>Confidence Intervals for the Mean (Small Samples)
+<ol style="list-style-type: decimal">
+<li>Constructing a Confidence Interval for the Mean: <span class="math inline">\(t\)</span>-Distribution</li>
+</ol></li>
+<li>Confidence Intervals for Population Proportions
+<ol style="list-style-type: decimal">
+<li>Constructing a Confidence Interval for a Population Proportion</li>
+<li>Finding a Minimum Sample Size to Estimate <span class="math inline">\(p\)</span></li>
+</ol></li>
+<li>Confidence Intervals for Variance and Standard Deviation
+<ol style="list-style-type: decimal">
+<li>Constructing a Confidence Interval for a Variance and Standard Deviation</li>
 </ol></li>
 </ul>
 </div>
@@ -483,7 +502,7 @@ Examples: number, logical value, character(string)</li>
 <ul>
 <li>Before everything else, set your working directory. Setting the working directory is choosing a folder to save your work. You can set the working directory using the File tab or the function <code>setwd()</code>.</li>
 <li>Typing <code>?funcname</code> will cause <strong>R</strong> to open a new help file window with additional information about the function <code>funcname</code></li>
-<li>We can assign values in <strong>R</strong> using <code>&lt;-</code> operator.<br />
+<li>We can assign values in <strong>R</strong> using the “<code>&lt;-</code>” operator.<br />
 <em>Example</em></li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span>x &lt;-<span class="st"> </span><span class="dv">143</span></a>
@@ -509,7 +528,7 @@ We use the function <code>c()</code> to create a vector of numbers</li>
 <ul>
 <li>Note that the prompt, <code>&gt;</code>, is not part of the command; rather, it is printed by <strong>R</strong> to indicate that it is ready for another command to be entered.</li>
 <li>Hitting the <em>up arrow key</em> multiple times will display the previous commands, which can then be edited.</li>
-<li>a <code>+</code> sign replacing <code>&gt;</code> indicates that your code is not complete and that <strong>R</strong> is asking you to complete your code.</li>
+<li>a plus sign, <code>+</code>, replacing <code>&gt;</code> indicates that your code is not complete and that <strong>R</strong> is asking you to complete your code.</li>
 </ul>
 </div><div id="creating-functions-in-r" class="slide section level2">
 <h1>Creating Functions in R</h1>
@@ -565,7 +584,28 @@ REP<br />
 <span class="math display">\[\bar{x}+E\]</span><br />
 Interval<br />
 <span class="math display">\[\bar{x}-E&lt;\mu&lt;\bar{x}+E\]</span> or<br />
-<span class="math display">\[(\bar{x}-E,\;\bar{x}+E)\]</span></p>
+<span class="math display">\[(\bar{x}-E,\;\bar{x}+E)\]</span><br />
+<em>Example</em><br />
+Construct a 95% confidence interval for the population mean. Interpret your answer.</p>
+<ol style="list-style-type: decimal">
+<li>The stem-and-leaf plot shows the result of a random sample of airfare prices (in dollars) for a one-way ticket from Boston, MA to Chicago, IL.</li>
+</ol>
+<pre><code>
+  The decimal point is 1 digit(s) to the right of the |
+
+  18 | 33
+  19 | 7
+  20 | 99
+  21 | 222333333366
+  22 | 2222366888889
+  23 | 88</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>A random sample of the closing stock prices for the Oracle Corporation for a recent year.</li>
+</ol>
+<pre><code> [1] 18.41 18.32 22.86 14.47 16.91 18.65 20.86 19.06 16.83 20.71 20.74
+[12] 18.42 17.72 20.66 22.05 20.85 15.54 21.04 21.42 21.43 15.56 21.74
+[23] 22.34 21.97 18.01 22.13 22.83 21.81 19.11 21.96 24.34 19.79 22.16
+[34] 17.97</code></pre>
 </div>
 
   <!-- dynamically load mathjax for compatibility with self-contained -->

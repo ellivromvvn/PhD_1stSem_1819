@@ -12,8 +12,19 @@ knitr::opts_chunk$set(prompt = T)
 - Introduction to **R**
   1. The **R** Environment
   2. RStudio
-  3. Basic Commands
-  
+  3. Data Type and Objects
+  4. Basic Commands
+  5. Creating Functions in R
+- Confidence Intervals for the Mean (Large Samples)
+  1. Finding a Confidence Interval for a Population Mean
+- Confidence Intervals for the Mean (Small Samples)
+  1. Constructing a Confidence Interval for the Mean: $t$-Distribution
+- Confidence Intervals for Population Proportions
+  1. Constructing a Confidence Interval for a Population Proportion
+  2. Finding a Minimum Sample Size to Estimate $p$
+- Confidence Intervals for Variance and Standard Deviation
+  1. Constructing a Confidence Interval for a Variance and Standard Deviation
+
 # Introduction to **R**
 
 ## The **R** Environment  
@@ -49,7 +60,7 @@ Examples: number, logical value, character(string)
 ## Basic Commands
 - Before everything else, set your working directory. Setting the working directory is choosing a folder to save your work. You can set the working directory using the File tab or the function `setwd()`.
 - Typing `?funcname` will cause **R** to open a new help file window with additional information about the function `funcname`
-- We can assign values in **R** using `<-` operator.  
+- We can assign values in **R** using the "`<-`" operator.  
 *Example*
 ```{r}
 x <- 143
@@ -76,7 +87,7 @@ x
 ```
 - Note that the prompt, `>`, is not part of the command; rather, it is printed by **R** to indicate that it is ready for another command to be entered.
 - Hitting the *up arrow key* multiple times will display the previous commands, which can then be edited.
-- a `+` sign replacing `>` indicates that your code is not complete and that **R** is asking you to complete your code.
+- a plus sign, `+`, replacing `>` indicates that your code is not complete and that **R** is asking you to complete your code.
 
 ## Creating Functions in R
 - We can write functions in R!
@@ -145,4 +156,23 @@ $$\bar{x}+E$$
 Interval  
 $$\bar{x}-E<\mu<\bar{x}+E$$
 or  
-$$(\bar{x}-E,\;\bar{x}+E)$$
+$$(\bar{x}-E,\;\bar{x}+E)$$  
+*Example*  
+Construct a 95% confidence interval for the population mean. Interpret your answer.
+
+1. The stem-and-leaf plot shows the result of a random sample of airfare prices (in dollars) for a one-way ticket from Boston, MA to Chicago, IL.
+```{r include=FALSE}
+x<-c(183,183,197,209,209,212,212,212,213,213,213,213,213,213,213,216,216,222,222,222,222,223,226,226,228,228,228,228,228,229,238,238)
+```
+```{r echo=FALSE}
+stem(x)
+```
+2. A random sample of the closing stock prices for the Oracle Corporation for a recent year.
+```{r include=FALSE}
+x<-c(18.41,18.32,22.86,14.47,16.91,18.65,20.86,19.06,16.83,20.71,20.74,18.42,17.72,20.66,22.05,20.85,15.54,21.04,21.42,21.43,15.56,21.74,22.34,21.97,18.01,22.13,22.83,21.81,19.11,21.96,24.34,19.79,22.16,17.97)
+```
+```{r echo=FALSE, comment=""}
+x
+```
+
+
