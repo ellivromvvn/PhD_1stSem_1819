@@ -5,9 +5,7 @@ author: |
   | odhombrebueno@nvsu.edu.ph
   |
   | **College of Teacher Education**
-output: 
-  slidy_presentation:
-    footer: "Inferential Statistics, 1st Semester, S.Y. 2018-2019"
+output: pdf_document
 ---
 ```{r include=FALSE}
 knitr::opts_chunk$set(comment = '')
@@ -30,6 +28,8 @@ knitr::opts_chunk$set(prompt = T)
     b. Finding a Minimum Sample Size to Estimate $p$
 - Confidence Intervals for Variance and Standard Deviation
     a. Constructing a Confidence Interval for a Variance and Standard Deviation
+
+\clearpage
 
 # Introduction to **R**
 
@@ -130,6 +130,8 @@ or
 mean(y)
 ```
 
+\clearpage
+
 # Confidence Intervals for the Mean (Large Samples)
 
 ## Finding a Confidence Interval for a Population Mean
@@ -180,6 +182,8 @@ x<-c(18.41,18.32,22.86,14.47,16.91,18.65,20.86,19.06,16.83,20.71,20.74,18.42,17.
 x
 ```
 
+\clearpage
+
 # Confidence Intervals for the Mean (Small Samples) 
 
 ## Constructing a Confidence Interval for the Mean: $t$-Distribution
@@ -226,6 +230,8 @@ x <- c(2.3, 3.3, 2.6, 1.8, 0.2, 3.1, 4.0, 0.7, 2.3,
 x
 ```
 
+\clearpage
+
 # Confidence Intervals for Population Proportions
 
 ## Constructing a Confidence Interval for a Population Proportion
@@ -270,6 +276,8 @@ You wish to estimate, with 99% confidence, the population proportion of U.S. adu
 1. No preliminary estimate is available. Find the minimum sample size needed.
 2. Find the minimum sample size needed, using a prior study that found that 47% of U.S. adults read fiction books.
 
+\clearpage
+
 # Confidence Intervals for Variance and Standard Deviation
 
 ## Constructing a Confidence Interval for a Variance and Standard Deviation
@@ -284,12 +292,12 @@ In **R** we have the `var()` function.
 In **R**,
 $$\chi^2_{R}=\frac{1+c}{2},\;\;\chi^2_{L}=\frac{1-c}{2}.$$
 *Example*  
-$c=95\%\;\text{ or }\; 0.95$ and $\text{d.f.}=17$  
+$c=95\%\;\text{ or }\; 0.95$ and $\text{d.f.}=17$
 ```{r}
 qchisq((1 - 0.95)/2, df=17) #left-tail critical value
 ```  
 ```{r}
-qchisq((1 + 0.95)/2, df=17) #right-tail critical value
+qchisq((1 + 0.95)/2, df=17) #righ-tail critical value
 ```
 5. Find the left and right endpoints and form the confidence interval for the population variance.
 $$\frac{(n-1)s^2}{\chi^2_{R}}<\sigma^2<\frac{(n-1)s^2}{\chi^2_{L}}$$

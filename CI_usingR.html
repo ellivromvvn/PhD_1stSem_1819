@@ -573,7 +573,7 @@ In <strong>R</strong> we have the function <code>mean()</code>.</li>
 In <strong>R</strong> we have the function <code>sd()</code>.</li>
 <li>Find the critical value <span class="math inline">\(z_{c}\)</span> that corresponds to the given level of confidence.<br />
 <em>Example</em><br />
-For <span class="math inline">\(c=95\%\;\text{ or }\; 0.95\)</span></li>
+<span class="math inline">\(c=95\%\;\text{ or }\; 0.95\)</span></li>
 </ol>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">qnorm</span>((<span class="dv">1</span><span class="fl">+0.95</span>)<span class="op">/</span><span class="dv">2</span>)</a></code></pre></div>
 <pre><code>[1] 1.959964</code></pre>
@@ -589,7 +589,7 @@ Interval<br />
 <span class="math display">\[\bar{x}-E&lt;\mu&lt;\bar{x}+E\]</span> or<br />
 <span class="math display">\[(\bar{x}-E,\;\bar{x}+E)\]</span></li>
 </ol>
-<p><em>Example</em></p>
+<p><strong><em>Example</em></strong></p>
 <p>Construct a 95% confidence interval for the population mean. Interpret your answer.</p>
 <ol style="list-style-type: decimal">
 <li>The stem-and-leaf plot shows the result of a random sample of airfare prices (in dollars) for a one-way ticket from Boston, MA to Chicago, IL.</li>
@@ -603,7 +603,7 @@ Interval<br />
   21 | 222333333366
   22 | 2222366888889
   23 | 88</code></pre>
-<p><em>Exercise</em></p>
+<p><strong><em>Practice</em></strong></p>
 <ol start="2" style="list-style-type: decimal">
 <li>A random sample of the closing stock prices for the Oracle Corporation for a recent year.</li>
 </ol>
@@ -618,7 +618,7 @@ Interval<br />
 <li>Find the sample statistics <span class="math inline">\(n\)</span>, <span class="math inline">\(\bar{x}\)</span>, and <span class="math inline">\(s\)</span>.<br />
 <span class="math display">\[\bar{x}=\frac{\sum{x}}{n},\;\;s=\sqrt{\frac{\sum{(\bar{x}-x)^2}}{n-1}}\]</span></li>
 <li>Identify the degrees of freedom, the level of confidence <span class="math inline">\(c\)</span>, and the <span class="math inline">\(t_{c}\)</span>. <span class="math display">\[\text{d.f.}=n-1\]</span> <em>Example</em><br />
-For <span class="math inline">\(c=95\%\;\text{ or }\; 0.95\)</span> and <span class="math inline">\(\text{d.f.}=16\)</span></li>
+<span class="math inline">\(c=95\%\;\text{ or }\; 0.95\)</span> and <span class="math inline">\(\text{d.f.}=16\)</span></li>
 </ol>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">qt</span>((<span class="dv">1</span><span class="fl">+0.95</span>)<span class="op">/</span><span class="dv">2</span>, <span class="dt">df =</span> <span class="dv">16</span>)</a></code></pre></div>
 <pre><code>[1] 2.119905</code></pre>
@@ -633,13 +633,102 @@ Interval<br />
 <span class="math display">\[\bar{x}-E&lt;\mu&lt;\bar{x}+E\]</span> or<br />
 <span class="math display">\[(\bar{x}-E,\;\bar{x}+E)\]</span></li>
 </ol>
-<p><em>Exercise</em></p>
+<p><strong><em>Practice</em></strong></p>
 <p>Construct a 90% confidence interval for the population mean. Assume the population of each data set is normally distributed. Interpret your answer.</p>
 <ol style="list-style-type: decimal">
 <li>The annual earnings (in pesos) of 14 randomly selected engineers.</li>
 </ol>
 <pre><code> [1] 63118 65740 72899 68500 66726 65554 69247 64963 68627 70448 71842
 [12] 66873 74103 71138</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>The grade point averages (GPA) of 15 randomly selected college students.</li>
+</ol>
+<pre><code> [1] 2.3 3.3 2.6 1.8 0.2 3.1 4.0 0.7 2.3 2.0 3.1 3.4 1.3 2.6 2.6</code></pre>
+</div>
+<div id="confidence-intervals-for-population-proportions" class="title-slide slide section level1"><h1>Confidence Intervals for Population Proportions</h1></div><div id="constructing-a-confidence-interval-for-a-population-proportion" class="slide section level2">
+<h1>Constructing a Confidence Interval for a Population Proportion</h1>
+<ol style="list-style-type: decimal">
+<li>Identify the sample statistics <span class="math inline">\(n\)</span> and <span class="math inline">\(x\)</span>.</li>
+<li>Find the point estimate <span class="math inline">\(\hat{p}\)</span>. <span class="math display">\[\hat{p}=x/n\]</span></li>
+<li>Verify that the sampling distribution of <span class="math inline">\(\hat{p}\)</span> can be approximated by a normal distribution. <span class="math display">\[n\hat{p}\ge 5,\;\;n\hat{q}\ge 5\]</span></li>
+<li>Find the critical value <span class="math inline">\(z_{c}\)</span> that corresponds to the given level of confidence <span class="math inline">\(c\)</span>.<br />
+<em>Example</em><br />
+<span class="math inline">\(c=95\%\;\text{ or }\; 0.95\)</span></li>
+</ol>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">qnorm</span>((<span class="dv">1</span><span class="fl">+0.95</span>)<span class="op">/</span><span class="dv">2</span>)</a></code></pre></div>
+<pre><code>[1] 1.959964</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Find the margin of error <span class="math inline">\(E\)</span>. <span class="math display">\[E=z_{c}\sqrt{\frac{\hat{p}\hat{q}}{n}}\]</span></li>
+<li>Find the left and right endpoints and form the confidence interval.<br />
+LEP<br />
+<span class="math display">\[\hat{p}-E\]</span><br />
+REP<br />
+<span class="math display">\[\hat{p}+E\]</span><br />
+Interval<br />
+<span class="math display">\[\hat{p}-E&lt;p&lt;\hat{p}+E\]</span> or<br />
+<span class="math display">\[(\hat{p}-E,\;\hat{p}+E)\]</span></li>
+</ol>
+<p><strong><em>Practice</em></strong></p>
+<ol style="list-style-type: decimal">
+<li>In a survey of 7000 women, 4431 say they change their nail polish once a week. Construct a 95% confidence interval for the population proportion of women who change their nail polish once a week. Interpret your answer.</li>
+<li>In a survey of 2303 U.S. adults, 734 believe in UFOs. Construct a 90% confidence interval for the population proportion of U.S. adults who believe in UFOs. Interpret your answer.</li>
+</ol>
+</div><div id="finding-a-minimum-sample-size-to-estimate-p" class="slide section level2">
+<h1>Finding a Minimum Sample Size to Estimate <span class="math inline">\(p\)</span></h1>
+<p>Given a <span class="math inline">\(c\)</span>-confidence level and a margin of error <span class="math inline">\(E\)</span>, the minimum sample size <span class="math inline">\(n\)</span> needed to estimate <span class="math inline">\(p\)</span> is <span class="math display">\[n=\hat{p}\hat{q}\left(\frac{z_{c}}{E}\right)^2.\]</span> This formula assumes that you have preliminary estimates of <span class="math inline">\(\hat{p}\)</span> and <span class="math inline">\(\hat{q}\)</span>. If not, use <span class="math inline">\(\hat{p}=0.5\)</span> and <span class="math inline">\(\hat{q}=0.5\)</span>.</p>
+<p><strong><em>Practice</em></strong></p>
+<p>You wish to estimate, with 99% confidence, the population proportion of U.S. adults who read fiction books. Your estimate must be accurate within 2% of the population proportion.</p>
+<ol style="list-style-type: decimal">
+<li>No preliminary estimate is available. Find the minimum sample size needed.</li>
+<li>Find the minimum sample size needed, using a prior study that found that 47% of U.S. adults read fiction books.</li>
+</ol>
+</div>
+<div id="confidence-intervals-for-variance-and-standard-deviation" class="title-slide slide section level1"><h1>Confidence Intervals for Variance and Standard Deviation</h1></div><div id="constructing-a-confidence-interval-for-a-variance-and-standard-deviation" class="slide section level2">
+<h1>Constructing a Confidence Interval for a Variance and Standard Deviation</h1>
+<ol style="list-style-type: decimal">
+<li>Verify that the population has a normal distribution.</li>
+<li>Identify the sample statistic <span class="math inline">\(n\)</span> and the degrees of freedom. <span class="math display">\[\text{d.f.}=n-1\]</span></li>
+<li>Find the point estimate <span class="math inline">\(s^2\)</span>. <span class="math display">\[s^2=\frac{\sum{(\bar{x}-x)^2}}{n-1}\]</span> In <strong>R</strong> we have the <code>var()</code> function.</li>
+<li>Find the critical value <span class="math inline">\(\chi^2_{R}\)</span> and <span class="math inline">\(\chi^2_{L}\)</span> that corresponds to the given level of confidence <span class="math inline">\(c\)</span>.<br />
+In <strong>R</strong>, <span class="math display">\[\chi^2_{R}=\frac{1+c}{2},\;\;\chi^2_{L}=\frac{1-c}{2}.\]</span> <em>Example</em><br />
+<span class="math inline">\(c=95\%\;\text{ or }\; 0.95\)</span> and <span class="math inline">\(\text{d.f.}=17\)</span></li>
+</ol>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">qchisq</span>((<span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.95</span>)<span class="op">/</span><span class="dv">2</span>, <span class="dt">df=</span><span class="dv">17</span>) <span class="co">#left-tail critical value</span></a></code></pre></div>
+<pre><code>[1] 7.564186</code></pre>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" data-line-number="1"><span class="op">&gt;</span><span class="st"> </span><span class="kw">qchisq</span>((<span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="fl">0.95</span>)<span class="op">/</span><span class="dv">2</span>, <span class="dt">df=</span><span class="dv">17</span>) <span class="co">#right-tail critical value</span></a></code></pre></div>
+<pre><code>[1] 30.19101</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Find the left and right endpoints and form the confidence interval for the population variance. <span class="math display">\[\frac{(n-1)s^2}{\chi^2_{R}}&lt;\sigma^2&lt;\frac{(n-1)s^2}{\chi^2_{L}}\]</span></li>
+<li>Find the confidence interval for the population standard deviation by taking the square root of each endpoint. <span class="math display">\[\sqrt{\frac{(n-1)s^2}{\chi^2_{R}}}&lt;\sigma&lt;\sqrt{\frac{(n-1)s^2}{\chi^2_{L}}}\]</span></li>
+</ol>
+<p><strong><em>Practice</em></strong></p>
+<p>Assume each sample is taken from a normally distributed population and construct the indicated confidence intervals for (a) the population variance <span class="math inline">\(\sigma^2\)</span> and (b) the population standard deviation <span class="math inline">\(\sigma\)</span>. Interpret the results.</p>
+<ol style="list-style-type: decimal">
+<li>As part of your spring break planning, you randomly selected 10 hotels in Cancun, Mexico, and record the room rate for each hotel. The results are shown in the stem-and-leaf plot. Use a 98% level of confidence.</li>
+</ol>
+<pre><code>
+  The decimal point is 1 digit(s) to the right of the |
+
+   6 | 9
+   7 | 4
+   8 | 
+   9 | 099
+  10 | 
+  11 | 2
+  12 | 
+  13 | 69
+  14 | 9
+  15 | 0</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>The weights (in pounds) of a random sample of 14 cordless drills are shown in the stem-and-leaf plot. Use a 99% level of confidence.</li>
+</ol>
+<pre><code>
+  The decimal point is at the |
+
+  3 | 469
+  4 | 689
+  5 | 134579
+  6 | 01</code></pre>
 </div>
 
   <!-- dynamically load mathjax for compatibility with self-contained -->

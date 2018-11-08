@@ -13,6 +13,7 @@ x <- 143 #assign 143 to x
 x #print the value of x
 y <- 198
 y
+r <- 7
 x + y #print the sum of  x and y
 z <- x +y #store the sum of x and y to z
 class(x) #what is x?
@@ -28,6 +29,10 @@ class(b)
 x <- c(1, 4, 3, 4, 4) 
 class(x)
 #create character and logical vectors.
+#character
+luv1s <- c("yenyen","star","uwa")
+#logical
+A <- c(T, F, T)
 
 
 #removing objects from the environment
