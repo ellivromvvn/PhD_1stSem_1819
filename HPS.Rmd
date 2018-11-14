@@ -8,8 +8,8 @@ date: "October 12, 2018"
 output:
   word_document:
     reference_docx: HPS_my_style.docx
-bibliography: ["biblio.bib"]
-biblio-style: "apa"
+bibliography: biblio.bib
+csl: apa.csl
 ---
 
 1. What makes science and mathematics education a daunting task among educators. Cite evidences from the reading material.
@@ -38,12 +38,12 @@ Finally, the article concludes that all of these issues on HPS have a direct bea
 
 2. What are the traces of HPS in the development of curricula (basic & higher education)?
 
+In the basic education HPS is neither explicit nor implicit in the curriculum guides. The emphasis in on content and concepts [@cg13].
+
 In the higher education, the Commission on Higher Education is committed to outcomes-based education in tune to  liberal education -- an aspect of HPS pointed by @strhps.
 
-HPS is explicit in the curriculum for general education. In the @gened, the teaching of the general education subject Science, Technology and Society is described to tackle scientific and technological developments throughout human history. Moreover, the general education curriculum in the country is explicitly carrying out the liberal nature of general education.
+HPS is explicit in the curriculum for general education. According to the @gened, the teaching of the general education subject Science, Technology and Society is described to tackle scientific and technological developments throughout human history. Moreover, the general education curriculum in the country is explicitly carrying out the liberal nature of general education.
 
 In the BS Math and BS Applied Math programs, HPS is all over the curriculum for both programs. Their program goals include that graduates are expected to develop deeper appreciation and understanding of the importance and application of mathematics throughout history and the modern world [@bsmath]. Most of the math subjects in these programs start with a brief history of the subject. Nonetheless, philosophy of mathematics is explicit in the program outcomes.
-
-
 
 # References

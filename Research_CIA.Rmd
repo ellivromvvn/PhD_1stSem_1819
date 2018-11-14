@@ -8,7 +8,7 @@ csl: apa.csl
 
 ## Rationale
 
-Technological advances have dramatically changed the landscape of education. This is evident in the presence of I
+Technological advances have dramatically changed the landscape of education. This is evident in the presence of I @CR17
 
 The impact of technology in teaching statistics
 
