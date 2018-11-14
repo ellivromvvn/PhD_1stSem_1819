@@ -20,7 +20,7 @@ knitr::opts_chunk$set(prompt = T)
     b. RStudio
     c. Data Type and Objects
     d. Basic Commands
-    e. Creating Functions in R
+    e. Creating Functions in **R**
 - Confidence Intervals for the Mean (Large Samples)
     a. Finding a Confidence Interval for a Population Mean
 - Confidence Intervals for the Mean (Small Samples)

@@ -7,6 +7,22 @@ getwd() #print working directory
 ?setwd
 ?getwd
 
+#Basic Computations
+5+5 #addition
+5-3 #subtraction
+5*3 #multiplication
+20/2 #division
+2+6/4 #use parenthesis to quantify operations
+(2+6)/4
+2^2 #exponent
+2^2+1 #using parenthesis
+2^(2+1)
+sqrt(4) #square root
+8^(1/3) #cube root
+x <- c(1, 2, 3)
+x^2
+xsquared <- x^2
+
 #Scalars
 #numeric
 x <- 143 #assign 143 to x
@@ -72,6 +88,18 @@ CI.pop.mean.ls <- function(x, c){
   CI <- c(xbar - E, xbar + E) #confidence interval
   return(round(CI, digits = 2)) #print confidence interval
 }
+# entering n
+CI.pop.mean.ls <- function(x, c, n){
+  xbar <- mean(x)
+  s <- sd(x)
+  zsubc <- qnorm((1 + c)/2) #z scores
+  E <- zsubc * s/sqrt(n) #margin of error
+  CI <- c(xbar - E, xbar + E) #confidence interval
+  return(round(CI, digits = 2)) #print confidence interval
+}
+
+CI.pop.mean.ls(x=x,c = 0.95, n=32)
+
 #testing
 #storing the data
 x<-c(183, 183, 197, 209, 209, 212, 212, 212, 213, 213, 213,
@@ -79,6 +107,7 @@ x<-c(183, 183, 197, 209, 209, 212, 212, 212, 213, 213, 213,
      226, 226, 228, 228, 228, 228, 228, 229, 238, 238)
 CI.pop.mean.ls(x, 0.95)
 #Example 2.
+
 
 #Confidence Intervals for the Mean (Small Samples)
 #Constructing a Confidence Interval for the Mean:t-Distribution
