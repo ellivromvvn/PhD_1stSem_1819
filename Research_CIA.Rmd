@@ -8,7 +8,13 @@ csl: apa.csl
 
 ## Rationale
 
-Technological advances have dramatically changed the landscape of education. This is evident in the presence of I @CR17
+Technological advancement has made big data [@gould14] inevitable in our daily life. In addition, powerful computers are now easily available [@finzer13]. These advances have dramatically changed the practice of statistics [@wood18]. To cope up with these changes, in 2005, @franklin07 put forth recommendations as framework for statistics education both in the k to 12 and college. In 2016, the @GCR16 revisited the effectiveness of the framework and still found it effective. New Zealand adopting this framework, 
+
+A recommendation brought out by the @GCR16 is the use of technology to explore concepts and analyze data. 
+
+A key point in the 
+
+
 
 The impact of technology in teaching statistics
 
