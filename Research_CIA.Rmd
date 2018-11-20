@@ -1,5 +1,7 @@
 ---
-output: word_document
+output:
+  word_document:
+    reference_docx: Research_CIA_my_style.docx
 bibliography: biblio.bib
 csl: apa.csl
 ---
@@ -8,18 +10,16 @@ csl: apa.csl
 
 ## Rationale
 
-Technological advancement has led to the emergence of big data [@gould14] making data inevitable in our daily life. In addition, powerful computers are now easily available [@finzer13]. These developments gave way to the emergence of data science as a field.  In turn, these advances have dramatically changed the practice of statistics [@wood18]. To cope up with these changes, in 2005, @franklin07 put forth some recommendations as framework for statistics education both in the k to 12 and college level. In 2016, the @GCR16 revisited the effectiveness of the framework and still found it effective. New Zealand who adopted the framework, has benefited .
+Technological advancement has led to the emergence of big data [@gould14] making data inevitable in our daily life. In addition, powerful computers are now easily available [@finzer13]. These developments gave way to the emergence of data science as a field. As a result, the practice of statistics has dramatically changed and has distanced away from statistics education [@wood18; @zieffler18]. In the regard, @gould10, @horton15a @horton15 and @hardin15 pointed out the importance of data management skills and its integration in introductory and second courses in statistics. Nonetheless, some measures are already in place to lessen the gap between statistical practice and statistics education. In 2005, @franklin07 put forth some recommendations as framework for statistics education both in the k to 12 and college level. In 2016, the @GCR16 revisited the effectiveness of the framework and still found it effective. The framework is now the standard in statistics education in the United States and in many countries who adopted it [@zieffler18].  
+ 
+One of the recommendations in the Guidelines for Assessment and Instruction in Statistics Education (GAISE) College Report 2016 is the use of technology to explore concepts and analyze data [@GCR16]. Studies show that the use of technology can really improve statistics education; equipping learners with relevant data skills in this era where data is very much abundant [@doi16; @chance06; @chance07; @harraway12; @CR17; @stander17]. @grabarnik13
 
-A recommendation brought out by the @GCR16 is the use of technology to explore concepts and analyze data. 
-
-
-The impact of technology in teaching statistics
 
 Reproducible
 
 The gap between statistical practice and statistics education.
 
-@zieffler18 pointed out that New Zealand adopted the GAISE report and has now benefited. 
+ 
 
 R and RStudio
 
