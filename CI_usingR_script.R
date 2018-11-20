@@ -172,6 +172,7 @@ CI.var.sd <- function(x, c){
   return(round(c(CI.var, CI.sd), digits = 2))
 }
 
+
 #additional options
 CI.var.sd <- function(x, c, CI = "both"){
   n <- length(x)
