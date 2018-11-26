@@ -1,0 +1,52 @@
+---
+output: pdf_document
+documentclass: exam
+---
+\pagestyle{headandfoot}
+\firstpageheader{Inferential Statistics\\O. D. Hombrebueno}{Nueva Vizcaya State University\\College of Teacher Education}{RStudio Exam\\November 27, 2018}
+\runningheader{}{}{}
+\firstpagefooter{}{}{}
+\runningfooter{Inferential Statistics}{RStudio Exam}{Page \thepage\ of \numpages}
+\runningfootrule
+
+\makebox[4in]{Name:\enspace\hrulefill}
+
+\makebox[3in]{Course and Year:\enspace\hrulefill}
+
+\vspace{5mm}
+
+**Instruction** Create a script file and write functions for each item. Make use of hashtags to label your functions. Save it with a file name IS_Familyname (ex. IS_Hombrebueno) and send it to odhombrebueno@nvsu.edu.ph. On the test paper, write your answer and interpretation.
+
+**Part 1.** Use a normal distribution or a t-distribution to construct a 82% confidence interval for the population mean.  Justify your decision.  Interpret the results.
+
+1. You take a random survey of 25 sports cars and record the miles per gallon for each. The data are listed below. Assume the miles per gallon are normally distributed.
+
+    15 27 24 24 20 21 24 14 21 25 21 13 21 25 22 21 25 24 22 24 24 22 21 24 24
+\vspace{\stretch{1}}
+ 
+2. In a recent season, the standard deviation of the yards per carry for all running backs was 1.34. The yards per carry of 20 randomly selected running backs are listed below. Assume the yards per carry are normally distributed.
+
+    5.6 4.4 3.8 4.5 3.3 5.0 3.6 3.7 4.8 3.5 5.6 3.0 6.8 4.7 2.2 3.3 5.7 3.0 5.0 4.5
+\vspace{\stretch{1}}
+
+\clearpage
+
+**Part 2.** Construct 99% confidence intervals for the population proportion.  Interpret the results.
+
+1. In a survey of 674 U.S. males ages 18–64, 396 say they have gone to the dentist in the past year.  
+\vspace{3in}
+
+**Part 3.** Assume each sample is taken from a normally distributed population and construct the indicated confidence intervals for (a) the population variance $\sigma^2$ and (b) the population
+standard deviation $\sigma$. Interpret the results.
+
+1. The reserve capacities (in hours) of 18 randomly selected automotive batteries are shown. Use a 99% level of confidence.
+
+    1.70 1.60 1.94 1.58 1.74 1.60 1.86 1.72 1.38 1.46 1.64 1.49 1.55 1.70 1.75 0.88 1.77 2.07
+\vspace{\stretch{1}}
+
+\clearpage
+
+**Part 4.** You wish to estimate, with 95% confidence, the population proportion of U.S. adults who want more funding for alternative energy. Your estimate must be accurate within 4% of the population proportion.
+
+1. Find the minimum sample size needed if no preliminary estimate is available.
+2. Find the minimum sample size needed if using a prior study that found that 78% of U.S. adults want more funding for alternative energy.
