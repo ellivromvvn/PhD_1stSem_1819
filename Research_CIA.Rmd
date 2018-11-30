@@ -12,11 +12,11 @@ csl: apa.csl
 
 Technological advancement has led to the emergence of big data [@gould14] making data inevitable in our daily life. In addition, powerful computers are now easily available . These developments gave way to the emergence of data science as a field. As a result, the practice of statistics has dramatically changed and has distanced away from statistics education [@finzer13; @wood18; @zieffler18]. In this regard, @gould10, @horton15a, @horton15 and @hardin15 pointed out the importance of data management skills and its integration in introductory and second courses in statistics. Nonetheless, some measures are already in place to lessen the gap between statistical practice and statistics education. In 2005, @franklin07 put forth the Guidelines for Assessment and Instruction in Statistics Education (GAISE) Report recommending a framework for statistics education both in the k to 12 and college level. They recommended the "integration of "real data with a context and purpose" and the "use of technology to explore concepts and analyze data." In 2016, the @GCR16 revisited the effectiveness of the framework and still found it effective. The framework is now the standard in statistics education in the United States and in many countries who adopted it [@zieffler18].  
  
-
-
 Studies have shown that the use of technology can really improve statistics education; equipping learners with relevant data skills and effective powerful tools in this era where data is very much abundant [@doi16; @chance06; @chance07; @harraway12; @CR17; @stander17]. However, there is no single statistical computing tool that fits all statistical tasks [@mcnamara18]. Nonetheless, introductory statistics students should be taught a common statistical package such as SPSS, SAS, or R [@R], enthusing them to continuously learn statistics technology since statistical tools are diverse and eventually evolve through time [@gould18a].
 
 The choice of which software to use in teaching statistics can be quite a challenge given a lot of things to consider. It can be a problem similar to bridging the gap between the practice of statistics and statistics education. Tools for learning statistics can be used easily by starters opposite to when using tools for doing statistics [@gould18a]. However, 
+
+
 Reproduciblequite
 
 The gap between statistical practice and statistics education.

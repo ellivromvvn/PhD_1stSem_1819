@@ -1,0 +1,16 @@
+1. Age
+2. Have you done programming before? (Yes or No)
+3. Which do you prefer in doing statistical computation, using calculator
+   or using RStudio? Why?
+4. Using RStudio is easy. 1-strongly disagree; 2-disagree; 3-agree;
+   4-strongly agree. Why?
+5. I would suggest using RStudio to my colleagues. 1-strongly disagree; 
+   2-disagree; 3-agree; 4-strongly agree. Why?
+6. The time alloted in learning RStudio before the exam is sufficient.
+   1-strongly disagree; 2-disagree; 3-agree; 4-strongly agree. Why?
+7. RStudio is interesting and I want to learn more about it for future
+   use. 1-strongly disagree; 2-disagree; 3-agree; 4-strongly agree. Why?
+8. The teacher did a great job in teaching CI using calculator.
+   1-strongly disagree; 2-disagree; 3-agree; 4-strongly agree. Why?
+9. The teacher did a great job in teaching CI using RStudio.
+   1-strongly disagree; 2-disagree; 3-agree; 4-strongly agree. Why?
