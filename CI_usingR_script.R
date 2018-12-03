@@ -88,6 +88,17 @@ CI.pop.mean.ls <- function(x, c){
   CI <- c(xbar - E, xbar + E) #confidence interval
   return(round(CI, digits = 2)) #print confidence interval
 }
+#if population sigma is given
+
+CI.pop.mean.ls <- function(x, c, s = sd(x)){
+  n <- length(x) 
+  xbar <- mean(x)
+  zsubc <- qnorm((1 + c)/2) #z scores
+  E <- zsubc * s/sqrt(n) #margin of error
+  CI <- c(xbar - E, xbar + E) #confidence interval
+  return(round(CI, digits = 2)) #print confidence interval
+}
+
 
 # entering n
 CI.pop.mean.ls <- function(x, c, n){
@@ -99,17 +110,13 @@ CI.pop.mean.ls <- function(x, c, n){
   return(round(CI, digits = 2)) #print confidence interval
 }
 
-
-
 #testing
 #storing the data
-x<-c(183, 183, 197, 209, 209, 212, 212, 212, 213, 213, 213,
+x <- c(183, 183, 197, 209, 209, 212, 212, 212, 213, 213, 213,
      213, 213, 213, 213, 216, 216, 222, 222, 222, 222, 223,
      226, 226, 228, 228, 228, 228, 228, 229, 238, 238)
 
-CI.pop.mean.ls(x, 0.95)
-
-CI.pop.mean.ls(x=x,c = 0.95, n=32)
+CI.pop.mean.ls(x = x, c = 0.95, n = 32)
 
 #Example 2.
 
@@ -119,14 +126,15 @@ CI.pop.mean.ls(x=x,c = 0.95, n=32)
 
 CI.pop.mean.ss <- function(x, c){
   n <- length(x)
-  df <- n-1
+  df <- n - 1
   xbar <- mean(x)
   s <- sd(x)
-  tsubc <- qt((1 + c)/2, df=df) #t scores
+  tsubc <- qt((1 + c)/2, df = df) #t scores
   E <- tsubc * s/sqrt(n) #margin of error
   CI <- c(xbar - E, xbar + E) #confidence interval
   return(round(CI, digits = 2)) #print confidence interval
 }
+
 CI.pop.mean.ss(x=x, c=0.95)
 
 #Confidence Intervals for Population Proportions
