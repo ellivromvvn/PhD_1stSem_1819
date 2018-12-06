@@ -6,4 +6,5 @@ data$DIS<-rowMeans(data[,15:16])
 data$INS<-rowMeans(data[,17:19])
 
 #data to tibble
+library(tidyverse)
 data <- as.tibble(data)
