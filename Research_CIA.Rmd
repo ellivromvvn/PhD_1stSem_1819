@@ -95,14 +95,59 @@ The choice of which software to use in teaching statistics can be quite a challe
 
 # Results and Discussion
 
-```{r pander}
-n <- 100
-x <- rnorm(n)
-y <- 2*x + rnorm(n)
-out <- lm(y ~ x)
+```{r echo=F, message=F}
+load("~/R/PhD_1stSem_1819/raw_data.RData")
+attach(data)
+library(knitr)
 library(pander)
-panderOptions("digits", 2)
-pander(out)
 ```
+
+## Profile Variables of the Respondents
+
+### Gender
+
+```{r, echo=F}
+a<-as.data.frame(table(Gender),stringsAsFactors = F)
+b<-prop.table(table(Gender))
+a$Percentage<-round(100*c(b),digits=2)
+a[nrow(a)+1,]<-list("**Total**", 8, 100)
+set.caption("**Table 1:** Frequency Distribution Gender")
+pander(a)
+```
+
+### Have Previous Programming Experience
+
+```{r, echo=F}
+a<-as.data.frame(table(Prog),stringsAsFactors = F)
+b<-prop.table(table(Prog))
+a$Percentage<-round(100*c(b),digits=2)
+a[nrow(a)+1,]<-list("**Total**", 8, 100)
+set.caption("**Table 2:** Frequency Distribution of Have Previous Programming Experience")
+pander(a)
+```
+
+### Statistical Computing Tool Preference: Calculator or RStudio
+
+```{r, echo=F}
+kable(prop.table(table(RStudio)),caption="**Table 3:** Frequency Distribution of Respondents' Statistical Computing Tool Preference")
+```
+
+### Age
+
+```{r, echo=F}
+kable(table(Age),caption="**Table 3:** Frequency Distribution of Respondents' Age")
+```
+
+Another Table
+
+V1         Tweedledee       Tweedledum
+--------   --------------   ----------------
+Age        14               14
+Height     3'2"             3'2"
+Politics   Conservative     Conservative
+Religion   "New Age"        Syrian Orthodox
+---------  --------------   ----------------
+
+
 
 # Reference
