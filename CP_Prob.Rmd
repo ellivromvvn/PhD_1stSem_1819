@@ -1,0 +1,42 @@
+---
+title: 'Critique Paper in History and Philosophy of Science and Technology Education'
+subtitle: "Why Not Philosophy? Problematizing the Philosophy of Mathematics in a Time of Curriculum Reform"
+author:
+  - Orville D. Hombrebueno
+  - "Ph.D. in Science Education: Mathematics"
+date: "December 19, 2018"
+output: 
+    word_document:
+        reference_docx: CP_Ramanujan_my_style.docx
+bibliography: prob.bib
+csl: apa.csl
+---
+# Introduction
+
+What is mathematics? A question that I have never thought of to be that much important as teaching mathematics until now. At work I was assigned the task of revising the curriculum for our BSEd Mathematics program. During the said task, I have not seen nor realized this very important aspect of mathematics education. However, reading the article, I have come to see that it solicits much consideration in the task. Not to mention the implementation of the curriculum.  As a math teacher, I have come to realize the importance of philosophy of mathematics in my teaching career. I have learned that aside from my view of mathematics -- absolutist [@ernest91]-- there are different views that I have never come to think of and that these views are worth considering if I want to become an effective mathematics teacher. @fr10 laid down these views as pillars to the future of mathematics education.
+
+# Issues
+
+In her opening lines, @fr10 has pointed out that efforts in changing the school of mathematics is all for naught if there is no radical change in instructional practices, in the teachers' views of teaching and learning mathematics and also in the discipline of mathematics itself. A task that requires an explicit conversation about and exploration of the philosophy of mathematics. She pointed out that the conceptions that teachers hold regarding the philosophy of teaching and learning mathematics and even the philosophy of mathematics itself should be examined and revised before revisions in the curriculum should and will take place. 
+
+In addition, she points out that reforms in the school of mathematics are pushing through constructivist teaching and inquiry based learning. These approaches demand that teachers' view of mathematics should be that of a fallibilist [@ernest91]. She argues that teachers are caught in between since their views are still that of an absolutist. That teachers often do not know philosophies of mathematics. She reiterates that this situation can bring to nothing efforts for change in the school of mathematics. She addressed these issues with this article. She brought out three views of education and mathematics; social constructivism, postmodern view, and new ideas in the philosophy of mathematics hoping to enlighten mathematics teachers.
+
+Discussing social constructivism, she pointed out Ernest's view that the learning theory, social constructivism, is a philosophy of mathematics; mathematics as a social construction [@ernest98]. It is in tune with the fallibilist view of mathematics -- mathematics as a human construction that is fallible and corrigible -- since it sees mathematics as societal knowledge that should be interpreted in such a way that it will have meaning for an individual.
+
+The postmodern view is Ernest's view that advocates the distancing away from the absolutist view of mathematics and embracing the fallibilist view. Mathematics should not be about behaviorist approach, utilizing drill and practice of discrete skills, individual activity, and an emphasis on procedures but should be about constructivist theories, utilizing problem-based learning, real world application, collaborative learning, and an emphasis on process. This view challenges the traditional views of mathematics education and pushes through student-centered instructional practices.
+
+Others have joined Ernest in exploring mathematics and mathematics instruction through the postmodern perspective. One is Neyland who hopes for a movement away from mathematics instruction emphasizing procedural compliance and onto a more ethical relationship between teacher and student, one that stresses not just enchantment in mathematics education but complexity as well. Another is Walshaw who rooted out from sociocultural theories ideas such as equity in mathematics: mathematics is for all and not just for those who can do mathematics. The idea that mathematics is not flawless and has bumps and irregularities is another postmodern view from Fleener which is opposite to the traditional view that ignores this aspect forcing a vision of mathematics as smooth, neat, and orderly. Brown's postmodern view contests the view that mathematics is discovered. Brown agrees with Ernest that mathematics is constructed. Siegel and Borasi supports this notion by identifying pervasive cultural myths that continue to represent mathematics as the discipline of certainty. It is also their idea that mathematical knowledge is a social process that occurs within a community of practice and that this process will engage students to do mathematics not like simply memorizing rote procedures and discrete skills.
+
+Concerning new ideas in the philosophy of mathematics, @davis81 discussed two opposing views: Platonism -- perfect and certain mathematics -- and the development of formalism as a result of the uncertainty in mathematics brought about by the discovery of non-Euclidean geometry. In formalism, mathematics is considered as a field of study concerning symbols and proofs as language for other sciences. Among the proponents are Russell and Whitehead with their Principia Mathematica. How ever, according to Gödel, their scheme is doomed to fail [@gold05]. Lakatos and Polya offered an alternative to these two philosophies; the humanist philosophy -- mathematics as a human endeavor and a social construct. This philosophy brought mathematics to everyone. And lastly, Kitcher's view that history and philosophy of mathematics is important since mathematics changes: in theory and in practice.
+
+For me, it is hard to agree that mathematics is fallible. Nonetheless it is not right for me to just stick to my absolutist view of mathematics. I have actually found myself caught in between the absolutist view and the fallibilist view reading the article. I agree that it is not just me but there are also others who are caught in between these two philosophies. Some might not have yet read about the fallibilist view and are pure absolutist. Nonetheless, the impressive work of Ernest in mathematics education and in the philosophy of mathematics which were cited in the article, and that of the other authors who went against the traditional view, has opened me to new things that are worth exploring. I have downloaded the books and articles in the citations found in the article and I am planning to read it to broaden my perspective of mathematics education and the philosophy of mathematics hoping to improve my instruction and become an effective mathematics teacher. 
+
+# Conclusion
+
+The author has presented different views regarding mathematics education and the philosophy of mathematics. The article was written in a time where revisions in the curriculum are being undertaken. The author saw that it is the right time to bring out this views to be considered in this very important undertaking. Bringing out these views, the author hopes that mathematics teachers will explore these philosophies and change their views and philosophies which are anchored in absolutism and Platonism. This change is a key element in the curriculum revision and the future of mathematics education.
+
+# Recommendations
+
+I have come to learn that teaching and learning mathematics have HPS aspects that are integral and important for educators to learn and consider specially in carrying out their careers to become successful. Mathematics teachers should be enlightened with these views and philosophies of mathematics. These views and aspects should be considered in curriculum, instruction and assessment.
+
+# References
