@@ -94,7 +94,7 @@ x
 - Note that the prompt, `>`, is not part of the command; rather, it is printed by **R** to indicate that it is ready for another command to be entered.
 - Hitting the *up arrow key* multiple times will display the previous commands, which can then be edited.
 - a plus sign, `+`, replacing `>` indicates that your code is not complete and that **R** is asking you to complete your code.
-- The `ls()` function allows us to look at a list of all of the objects, such as data and functions, that we have in the environment. The `rm()` function can be used to delete any that we don’t want.
+- The `ls()` function allows us to look at a list of all of the objects, such as data and functions, that we have in the environment. The `rm()` function can be used to delete any that we don't want.
 
 ## Creating Functions in R
 - We can write functions in R!  
