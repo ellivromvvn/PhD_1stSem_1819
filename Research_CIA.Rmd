@@ -153,7 +153,7 @@ pander(a)
 
 ### Age
 
-Half of the respondents are 21 years old, 25% are 22 years old, one is 24 years old and one is 39 years old. Table 4 is the frequency distribution and summary of age.
+Half of the respondents are 21 years old, two are 22 years old, one is 24 years old and one is 39 years old. Table 4 is the frequency distribution of age.
 
 ```{r echo=F}
 a<-as.data.frame(table(Age),stringsAsFactors = F)
@@ -170,7 +170,7 @@ There are two sets of examination scores: the calculator test scores and RStudio
 
 ### Calculator Test Scores
 
-Among those who took the calculator test, 62.50% failed and 37.50% passed. The mean score is 46.25% which is not even passing. The exam result is not remarkable. Table 5 shows the frequency distribution and summary of calculator test scores.
+The result of the calculator test shows that 62.50% failed and 37.50% passed. The mean score is 46.25% which is not even passing. The exam result is not remarkable. Table 5 shows the frequency distribution and summary of calculator test scores.
 
 ```{r echo=F}
 Scores<-cut(data$CalcTest, breaks = c(0,49,100), labels = c("Failed","Passed"))
@@ -190,7 +190,7 @@ pander(c)
 
 ### RStudio Test Scores
 
-
+The result of the RStudio test shows that 37.50% passed and 62.50% failed. The mean score is 54.50 which is passing. Compared to the calculator test scores, the RStudio test scores seem to have a better result. Table 6 shows the frequency distribution and summary of RStudio test scores.
 
 ```{r echo=F}
 Scores<-cut(data$RStudioTest, breaks = c(0,49,100), labels = c("Failed","Passed"))
@@ -198,7 +198,7 @@ a<-as.data.frame(table(Scores),stringsAsFactors = F)
 b<-prop.table(table(Scores))
 a$Percentage<-round(100*c(b),digits=2)
 a[nrow(a)+1,]<-list("Total", 8, 100)
-set.caption("**Table 7:** Frequency Distribution and Summary of RStudio Test Scores")
+set.caption("**Table 6:** Frequency Distribution and Summary of RStudio Test Scores")
 Min<-min(RStudioTest)
 Mean<-mean(RStudioTest)
 Max<-max(RStudioTest)
@@ -208,58 +208,13 @@ pander(a)
 pander(c)
 ```
 
-## The Technology Readiness Index Scores, Calculator Test Scores, and RStudio Test Scores of the Respondents When Grouped According to the Profile Variables
+## Calculator Test Scores and RStudio Test Scores of the Respondents When Grouped According to the Profile Variables
 
-### Technology Readiness Index Scores
+The calculator test scores and the RStudio test scores of the respondents are grouped according to the profile variables gender, having previous programming experience and statistical computing tool preference.
 
-#### Gender
+### Calculator Test Scores According to Gender
 
-```{r echo=F}
-Male<-TRIScore[data$Gender=="Male"]
-Female<-TRIScore[data$Gender=="Female"]
-Gender<-c("Female","Male")
-Min<-c(min(Female),min(Male))
-Mean<-round(c(mean(Female),mean(Male)),digits = 2)
-Max<-c(max(Female),max(Male))
-SD<-round(c(sd(Female),sd(Male)),digits=2)
-a<-data.frame(Gender,Min,Mean,Max,SD)
-set.caption("**Table 8:** Summary of Technology Readiness Index Scores for Gender")
-pander(a)
-```
-
-#### Having Previous Programming Experience
-
-```{r echo=F}
-No<-TRIScore[data$Prog=="No"]
-Yes<-TRIScore[data$Prog=="Yes"]
-Experienced<-c("No","Yes")
-Min<-c(min(No),min(Yes))
-Mean<-round(c(mean(No),mean(Yes)),digits = 2)
-Max<-c(max(No),max(Yes))
-SD<-round(c(sd(No),sd(Yes)),digits=2)
-a<-data.frame(Experienced,Min,Mean,Max,SD)
-set.caption("**Table 9:** Summary of Technology Readiness Index Scores for Having Previous Programming Experience")
-pander(a)
-```
-
-#### Statistical Computing Tool Preference: Calculator or RStudio
-
-```{r echo=F}
-Calculator<-TRIScore[data$RStudio=="Calculator"]
-RStudio<-TRIScore[data$RStudio=="RStudio"]
-Preference<-c("Calculator","RStudio")
-Min<-c(min(Calculator),min(RStudio))
-Mean<-round(c(mean(Calculator),mean(RStudio)),digits = 2)
-Max<-c(max(Calculator),max(RStudio))
-SD<-round(c(sd(Calculator),sd(RStudio)),digits=2)
-a<-data.frame(Preference,Min,Mean,Max,SD)
-set.caption("**Table 10:** Summary of Technology Readiness Index for Statistical Computing Tool Preference")
-pander(a)
-```
-
-### Calculator Test Scores
-
-#### Gender
+Among the female respondents, only one passed the test. Among the male respondents, only one failed the test. The mean score for female respondents is 37 which is not passing. The mean score for male respondents is 61.67 which is passing. Table 7 shows the frequency distribution and summary of calculator test scores according to gender. The calculator test scores of male respondents is better than the scores of female respondents.
 
 ```{r echo=F}
 Male<-CalcTest[data$Gender=="Male"]
@@ -274,11 +229,34 @@ Mean<-round(c(mean(Female),mean(Male)),digits = 2)
 Max<-c(max(Female),max(Male))
 SD<-round(c(sd(Female),sd(Male)),digits=2)
 a<-data.frame(Gender,Failed,Passed,Min,Mean,Max,SD)
-set.caption("**Table 11:** Frequency Distribution and Summary of Calculator Test Scores for Gender")
+set.caption("**Table 7:** Frequency Distribution and Summary of Calculator Test Scores According to Gender")
 pander(a)
 ```
 
-#### Having Previous Programming Experience
+### RStudio Test Scores According to Gender
+
+Among the female respondents, the number of respondents who failed the test is one respondent greater than the number of respondents who passed the test. All of the male respondents passed the test. The mean score for female respondents is 43.20 which is not passing. The mean score for male respondents is 73.33 which is passing. Table 8 shows the frequency distribution and summary of RStudio test scores according to gender. The RStudio test scores of male respondents seem to be better than the scores of female respondents.
+
+```{r echo=F}
+Male<-RStudioTest[data$Gender=="Male"]
+Female<-RStudioTest[data$Gender=="Female"]
+Gender<-c("Female","Male")
+b<-cut(RStudioTest, breaks = c(0,49,100),labels = c("Failed","Passed"))
+c<-c(table(data$Gender,b))
+Failed<-c[1:2]
+Passed<-c[3:4]
+Min<-c(min(Female),min(Male))
+Mean<-round(c(mean(Female),mean(Male)),digits = 2)
+Max<-c(max(Female),max(Male))
+SD<-round(c(sd(Female),sd(Male)),digits=2)
+a<-data.frame(Gender,Failed,Passed,Min,Mean,Max,SD)
+set.caption("**Table 8:** Frequency Distribution and Summary of RStudio Test Scores According to Gender")
+pander(a)
+```
+
+### Calculator Test Scores According to Having Previous Programming Experience
+
+Half of the respondents who have previous programming experience failed the test and the other half passed. Only one respondent who have previous programming experience passed the test.
 
 ```{r echo=F}
 No<-CalcTest[data$Prog=="No"]
@@ -293,7 +271,28 @@ Mean<-round(c(mean(No),mean(Yes)),digits = 2)
 Max<-c(max(No),max(Yes))
 SD<-round(c(sd(No),sd(Yes)),digits=2)
 a<-data.frame(Experienced,Failed,Passed,Min,Mean,Max,SD)
-set.caption("**Table 12:** Frequency Distribution and Summary of Calculator Test Scores for Having Previous Programming Experience")
+set.caption("**Table 9:** Frequency Distribution and Summary of Calculator Test Scores According to Having Previous Programming Experience")
+pander(a)
+```
+
+### RStudio Test Scores According to Having Previous Programming Experience
+
+
+
+```{r echo=F}
+No<-RStudioTest[data$Prog=="No"]
+Yes<-RStudioTest[data$Prog=="Yes"]
+Experienced<-c("No","Yes")
+b<-cut(RStudioTest, breaks = c(0,49,100),labels = c("Failed","Passed"))
+c<-c(table(data$Prog,b))
+Failed<-c[1:2]
+Passed<-c[3:4]
+Min<-c(min(No),min(Yes))
+Mean<-round(c(mean(No),mean(Yes)),digits = 2)
+Max<-c(max(No),max(Yes))
+SD<-round(c(sd(No),sd(Yes)),digits=2)
+a<-data.frame(Experienced,Failed,Passed,Min,Mean,Max,SD)
+set.caption("**Table 10:** Frequency Distribution and Summary of RStudio Test Scores According to Having Previous Programming Experience")
 pander(a)
 ```
 
@@ -313,46 +312,6 @@ Max<-c(max(Calculator),max(RStudio))
 SD<-round(c(sd(Calculator),sd(RStudio)),digits=2)
 a<-data.frame(Preference,Failed,Passed,Min,Mean,Max,SD)
 set.caption("**Table 13:** Frequency Distribution and Summary of Calculator Test Scores for Statistical Computing Tool Preference")
-pander(a)
-```
-
-### RStudio Test Scores
-
-#### Gender
-
-```{r echo=F}
-Male<-RStudioTest[data$Gender=="Male"]
-Female<-RStudioTest[data$Gender=="Female"]
-Gender<-c("Female","Male")
-b<-cut(RStudioTest, breaks = c(0,49,100),labels = c("Failed","Passed"))
-c<-c(table(data$Gender,b))
-Failed<-c[1:2]
-Passed<-c[3:4]
-Min<-c(min(Female),min(Male))
-Mean<-round(c(mean(Female),mean(Male)),digits = 2)
-Max<-c(max(Female),max(Male))
-SD<-round(c(sd(Female),sd(Male)),digits=2)
-a<-data.frame(Gender,Failed,Passed,Min,Mean,Max,SD)
-set.caption("**Table 14:** Frequency Distribution and Summary of RStudio Test Scores for Gender")
-pander(a)
-```
-
-#### Having Previous Programming Experience
-
-```{r echo=F}
-No<-RStudioTest[data$Prog=="No"]
-Yes<-RStudioTest[data$Prog=="Yes"]
-Experienced<-c("No","Yes")
-b<-cut(RStudioTest, breaks = c(0,49,100),labels = c("Failed","Passed"))
-c<-c(table(data$Prog,b))
-Failed<-c[1:2]
-Passed<-c[3:4]
-Min<-c(min(No),min(Yes))
-Mean<-round(c(mean(No),mean(Yes)),digits = 2)
-Max<-c(max(No),max(Yes))
-SD<-round(c(sd(No),sd(Yes)),digits=2)
-a<-data.frame(Experienced,Failed,Passed,Min,Mean,Max,SD)
-set.caption("**Table 15:** Frequency Distribution and Summary of RStudio Test Scores for Having Previous Programming Experience")
 pander(a)
 ```
 
