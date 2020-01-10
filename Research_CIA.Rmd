@@ -38,24 +38,19 @@ Efforts in the Philippines
 
 1. What are the profile variables of the respondents?
 
-2. What are the technology readiness index scores, calculator test scores, and the RStudio test scores of the respondents?
+2. What are the technology readiness index scores, the calculator test scores, and the RStudio test scores of the respondents when grouped according to the profile variables?
 
-3. What are the technology readiness index scores, the calculator test scores, and the RStudio test scores of the respondents when grouped according to the profile variables?
+3. Is there significant difference in the calculator test scores and the RStudio test scores of the respondents when grouped according to the profile variables?
 
-4. Is there significant difference in the technology readiness index scores, the calculator test scores, and the RStudio test scores of the respondents when grouped according to the profile variables?
+4. Is there significant relationship between age and the calculator test scores, and the RStudio test scores of the respondents?
 
-5. Is there significant relationship between age and the technology readiness index scores, the calculator test scores, and the RStudio test scores of the respondents?
-
-6. Is there significant relationship between the technology readiness index scores and the RStudio test scores of the respondents?
-
-7. Is there significant difference between the calculator test scores and RStudio test scores of the respondents?
+5. Is there significant difference between the calculator test scores and RStudio test scores of the respondents?
 
 ## Statement of the Hypothesis
 
 1. Is there significant difference between the calculator test scores and RStudio test scores of the respondents?
 
 2. the 
-
 
 ## Significance of the Study
 
@@ -67,6 +62,7 @@ Efforts in the Philippines
 
 ## Scope 
 
+
 ## Definition of Terms
 
 
@@ -75,9 +71,9 @@ Efforts in the Philippines
 
 The choice of which software to use in teaching statistics can be quite a challenge given a lot of things to consider. It can be a problem similar to bridging the gap between the practice of statistics and statistics education. Tools for learning statistics can be used easily by starters opposite to when using tools for doing statistics [@gould18a]. However,
 
-
-
 # Methodology
+
+
 
 ## Research Design
 
@@ -131,7 +127,7 @@ pander(a)
 
 ### Have Previous Programming Experience
 
-Among the respondents, half have previos programming experience while the other half have none. Table 2 shows the frequency distribution for have previous programming experience.
+Among the respondents, half have previos programming experience while the other half have none. Table 2 shows the frequency distribution for have previous programming experience. It seems that some students still have no programming experience when they take their second course in statistics.
 
 ```{r echo=F}
 a<-as.data.frame(table(Experienced),stringsAsFactors = F)
@@ -144,7 +140,7 @@ pander(a)
 
 ### Statistical Computing Tool Preference: Calculator or RStudio
 
-After learning the basics of using RStudio for statistical computing, half of the respondents still preferred to use calculator while the other half now preferred to use RStudio. Table 3 shows the frequency distribution for statistical computing tool preference. 
+Having learned the basics of using calculator and RStudio for statistical computing and took the examination using calculator and RStudio and then knowing their scores, half of the respondents still preferred to use calculator while the other half now preferred to use RStudio. Table 3 shows the frequency distribution for statistical computing tool preference. Among those who preferred RStudio, one said "it is easy". Among those who preferred calculator, one found using RStudio "complicated" and that using calculator is "comfortable". Table 3 shows the frequency distribution of statistical computing tool preference.
 
 ```{r echo=F}
 a<-as.data.frame(table(Preference),stringsAsFactors = F)
@@ -157,35 +153,24 @@ pander(a)
 
 ### Age
 
+Half of the respondents are 21 years old, 25% are 22 years old, one is 24 years old and one is 39 years old. Table 4 is the frequency distribution and summary of age.
+
 ```{r echo=F}
 a<-as.data.frame(table(Age),stringsAsFactors = F)
 b<-prop.table(table(Age))
 a$Percentage<-round(100*c(b),digits=2)
 a[nrow(a)+1,]<-list("Total", 8, 100)
-Mean<-mean(Age)
-Median<-median(Age)
-SD<-sd(Age)
-c<-data.frame(Mean,Median,SD)
-set.caption("**Table 4:** Frequency Distribution and Summary of Age")
-pander(a)
-pander(round(c, digits = 2))
-```
-
-## Technology Readiness Index Scores, Calculator Test Scores and RStudio Test Scores of the Respondents
-
-### Technology Readiness Index Scores
-
-```{r echo=F}
-Min<-min(TRIScore)
-Mean<-round(mean(TRIScore),digits = 2)
-Max<-max(TRIScore)
-SD<-round(sd(TRIScore),digits = 2)
-a<-data.frame(Min,Mean,Max,SD)
-set.caption("**Table 5:** Summary of Technology Readiness Index Scores")
+set.caption("**Table 4:** Frequency Distribution of Age")
 pander(a)
 ```
+
+## Calculator Test Scores and RStudio Test Scores of the Respondents
+
+There are two sets of examination scores: the calculator test scores and RStudio test scores.
 
 ### Calculator Test Scores
+
+Among those who took the calculator test, 62.50% failed and 37.50% passed. The mean score is 46.25% which is not even passing. The exam result is not remarkable. Table 5 shows the frequency distribution and summary of calculator test scores.
 
 ```{r echo=F}
 Scores<-cut(data$CalcTest, breaks = c(0,49,100), labels = c("Failed","Passed"))
@@ -193,7 +178,7 @@ a<-as.data.frame(table(Scores),stringsAsFactors = F)
 b<-prop.table(table(Scores))
 a$Percentage<-round(100*c(b),digits=2)
 a[nrow(a)+1,]<-list("Total", 8, 100)
-set.caption("**Table 6:** Frequency Distribution and Summary of Calculator Test Scores")
+set.caption("**Table 5:** Frequency Distribution and Summary of Calculator Test Scores")
 Min<-min(CalcTest)
 Mean<-mean(CalcTest)
 Max<-max(CalcTest)
@@ -204,6 +189,8 @@ pander(c)
 ```
 
 ### RStudio Test Scores
+
+
 
 ```{r echo=F}
 Scores<-cut(data$RStudioTest, breaks = c(0,49,100), labels = c("Failed","Passed"))
