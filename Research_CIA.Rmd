@@ -38,13 +38,15 @@ Efforts in the Philippines
 
 1. What are the profile variables of the respondents?
 
-2. What are the technology readiness index scores, the calculator test scores, and the RStudio test scores of the respondents when grouped according to the profile variables?
+2. What are the calculator test scores and RStudio test scores of the respondents?
 
-3. Is there significant difference in the calculator test scores and the RStudio test scores of the respondents when grouped according to the profile variables?
+3. What are the calculator test scores and RStudio test scores of the respondents when grouped according to the profile variables?
 
-4. Is there significant relationship between age and the calculator test scores, and the RStudio test scores of the respondents?
+4. Is there significant difference in the calculator test scores and the RStudio test scores of the respondents when grouped according to the profile variables?
 
-5. Is there significant difference between the calculator test scores and RStudio test scores of the respondents?
+5. Is there significant relationship between age and calculator test scores and age and RStudio test scores of the respondents?
+
+6. Is there significant difference between the calculator test scores and RStudio test scores of the respondents?
 
 ## Statement of the Hypothesis
 
@@ -254,9 +256,9 @@ set.caption("**Table 8:** Frequency Distribution and Summary of RStudio Test Sco
 pander(a)
 ```
 
-### Calculator Test Scores According to Having Previous Programming Experience
+### Calculator Test Scores According to Have Previous Programming Experience
 
-Half of the respondents who have previous programming experience failed the test and the other half passed. Only one respondent who have previous programming experience passed the test.
+Half of the respondents who don't have previous programming experience failed the calculator test and the other half passed. Only one respondent who have previous programming experience passed the test. The mean score for those who don't have previous programming experience is 54.25 which is passing. The mean score for those who have previous programming experience is 38.25 which is not passing. Table 9 shows the frequency distribution and summary of calculator test scores according to have previous programming experience.
 
 ```{r echo=F}
 No<-CalcTest[data$Prog=="No"]
@@ -271,13 +273,13 @@ Mean<-round(c(mean(No),mean(Yes)),digits = 2)
 Max<-c(max(No),max(Yes))
 SD<-round(c(sd(No),sd(Yes)),digits=2)
 a<-data.frame(Experienced,Failed,Passed,Min,Mean,Max,SD)
-set.caption("**Table 9:** Frequency Distribution and Summary of Calculator Test Scores According to Having Previous Programming Experience")
+set.caption("**Table 9:** Frequency Distribution and Summary of Calculator Test Scores According to Have Previous Programming Experience")
 pander(a)
 ```
 
-### RStudio Test Scores According to Having Previous Programming Experience
+### RStudio Test Scores According to Have Previous Programming Experience
 
-
+Half of the respondents who don't have previous programming experience failed the RStudio test and the other half passed. Only one respondent who have previous programming experience failed the test. The mean score for those who don't have previous programming experience is 52.50 which is passing. The mean score for those who have previous programming experience is 56.50 which is passing. Table 10 shows the frequency distribution and summary of RStudio test scores according to have previous programming experience.
 
 ```{r echo=F}
 No<-RStudioTest[data$Prog=="No"]
@@ -292,11 +294,13 @@ Mean<-round(c(mean(No),mean(Yes)),digits = 2)
 Max<-c(max(No),max(Yes))
 SD<-round(c(sd(No),sd(Yes)),digits=2)
 a<-data.frame(Experienced,Failed,Passed,Min,Mean,Max,SD)
-set.caption("**Table 10:** Frequency Distribution and Summary of RStudio Test Scores According to Having Previous Programming Experience")
+set.caption("**Table 10:** Frequency Distribution and Summary of RStudio Test Scores According to Have Previous Programming Experience")
 pander(a)
 ```
 
-#### Statistical Computing Tool Preference: Calculator or RStudio
+### Calculator Test Scores According to Statistical Computing Tool Preference
+
+
 
 ```{r echo=F}
 Calculator<-CalcTest[data$RStudio=="Calculator"]
@@ -311,11 +315,13 @@ Mean<-round(c(mean(Calculator),mean(RStudio)),digits = 2)
 Max<-c(max(Calculator),max(RStudio))
 SD<-round(c(sd(Calculator),sd(RStudio)),digits=2)
 a<-data.frame(Preference,Failed,Passed,Min,Mean,Max,SD)
-set.caption("**Table 13:** Frequency Distribution and Summary of Calculator Test Scores for Statistical Computing Tool Preference")
+set.caption("**Table 11:** Frequency Distribution and Summary of Calculator Test Scores According to Statistical Computing Tool Preference")
 pander(a)
 ```
 
-#### Statistical Computing Tool Preference: Calculator or RStudio
+RStudio Test Scores According to Statistical Computing Tool Preference
+
+
 
 ```{r echo=F}
 Calculator<-RStudioTest[data$RStudio=="Calculator"]
