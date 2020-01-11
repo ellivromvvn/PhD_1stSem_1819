@@ -300,7 +300,7 @@ pander(a)
 
 ### Calculator Test Scores According to Statistical Computing Tool Preference
 
-
+In the calculator test, only one passed among those who prefer calculator as statistical computing tool. Among those who preferred RStudio as statistical tool, half passed and half failed in the calculator test. The mean score for those who prefer calculator is 48.75 which is not passing. The mean score for those who prefer RStudio is 43.75 which is also not passing. Table 11 shows the frequency distribution and summary of calculator test scores according to statistical computing tool preference.
 
 ```{r echo=F}
 Calculator<-CalcTest[data$RStudio=="Calculator"]
@@ -319,9 +319,9 @@ set.caption("**Table 11:** Frequency Distribution and Summary of Calculator Test
 pander(a)
 ```
 
-RStudio Test Scores According to Statistical Computing Tool Preference
+### RStudio Test Scores According to Statistical Computing Tool Preference
 
-
+Among those who prefer calculator as statistical tool, half passed and half failed the RStudio test.
 
 ```{r echo=F}
 Calculator<-RStudioTest[data$RStudio=="Calculator"]
@@ -336,7 +336,7 @@ Mean<-round(c(mean(Calculator),mean(RStudio)),digits = 2)
 Max<-c(max(Calculator),max(RStudio))
 SD<-round(c(sd(Calculator),sd(RStudio)),digits=2)
 a<-data.frame(Preference,Failed,Passed,Min,Mean,Max,SD)
-set.caption("**Table 16:** Frequency Distribution and Summary of RStudio Test Scores for Statistical Computing Tool Preference")
+set.caption("**Table 12:** Frequency Distribution and Summary of RStudio Test Scores According to Statistical Computing Tool Preference")
 pander(a)
 ```
 
