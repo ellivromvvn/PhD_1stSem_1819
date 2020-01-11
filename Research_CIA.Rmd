@@ -216,7 +216,7 @@ The calculator test scores and the RStudio test scores of the respondents are gr
 
 ### Calculator Test Scores According to Gender
 
-Among the female respondents, only one passed the test. Among the male respondents, only one failed the test. The mean score for female respondents is 37 which is not passing. The mean score for male respondents is 61.67 which is passing. Table 7 shows the frequency distribution and summary of calculator test scores according to gender. The calculator test scores of male respondents is better than the scores of female respondents.
+Among the female respondents, only one passed the test. Among the male respondents, only one failed the test. The mean score for female respondents is 37 which is not passing. The mean score for male respondents is 61.67 which is passing. Table 7 shows the frequency distribution and summary of calculator test scores according to gender. The calculator test scores of male respondents seems to be better than the scores of female respondents.
 
 ```{r echo=F}
 Male<-CalcTest[data$Gender=="Male"]
@@ -321,7 +321,7 @@ pander(a)
 
 ### RStudio Test Scores According to Statistical Computing Tool Preference
 
-Among those who prefer calculator as statistical tool, half passed and half failed the RStudio test.
+Among those who prefer calculator as statistical computing tool, half passed and half failed the RStudio test. Among those who prefer RStudio as statistical computing tool, only one failed. The mean score of those who prefer calculator is 53.25 which is passing. The mean score of those who prefer RStudio is 55.75 which is also passing. Table 12 shows the frequency distribution and summary of RStudio test scores according to statistical computing tool preference.
 
 ```{r echo=F}
 Calculator<-RStudioTest[data$RStudio=="Calculator"]
@@ -340,46 +340,86 @@ set.caption("**Table 12:** Frequency Distribution and Summary of RStudio Test Sc
 pander(a)
 ```
 
-## Significant Difference in the Technology Readiness Index Scores, the Calculator Test Scores, and the RStudio Test Scores of the Respondents when Grouped According to the Profile Variables
+## Significant Difference in the Calculator Test Scores and the RStudio Test Scores of the Respondents when Grouped According to the Profile Variables
 
-### Technology Readiness Index Scores
-
-There are no significant difference.
+The calculator test scores and the RStudio test scores are grouped according to gender and have previous programming experience and statistical computing tool preference.
 
 ### Calculator Test Scores
 
-There are no significant difference.
+For the calculator test scores of the respondents when grouped according to gender, the Wilcoxon rank-sum test gives a p value of 0.29. Since the p value is greater than the significance level of 0.05, the null hypothesis that the mean calculator test score of male is equal to the mean calculator score of female is not rejected. There is no statistical evidence that the mean score of male of 61.67 is greater than the mean score of female of 37. Gender is not a factor among the respondents when it comes to their performance in the calculator test.
+
+For the calculator test scores of the respondents when grouped according to have previous programming experience, the Wilcoxon rank-sum test gives a p value of 0.56. Since the p value is greater than the significance level of 0.05, the null hypothesis that the mean calculator test score of the respondents who have previous programming experience is equal to the mean calculator score of the respondents who have no previous programming experience is not rejected. There is no statistical evidence that the mean score of the respondents who have no previous programming experience of 54.25 is greater than the mean score of the respondents who have previous programming experience of 38.25. Having previous programming experience is not a factor among the respondents when it comes to their performance in the calculator test.
+
+```{r echo=F, warning=FALSE, results='hide'}
+Female<-CalcTest[data$Gender=="Female"]
+Male<-CalcTest[data$Gender=="Male"]
+pander(wilcox.test(Male,Female))
+```
+
+
+```{r echo=F, warning=F, results='hide'}
+Yes<-CalcTest[data$Prog=="Yes"]
+No<-CalcTest[data$Prog=="No"]
+pander(wilcox.test(Yes,No))
+```
+
+
+```{r echo=F, warning=F, results='hide'}
+RStudio<-CalcTest[data$RStudio=="RStudio"]
+Calculator<-CalcTest[data$RStudio=="Calculator"]
+pander(wilcox.test(RStudio,Calculator))
+```
 
 ### RStudio Test Scores
 
-The Mann-Whitney test
+For the RStudio test scores of the respondents when grouped according to gender, the Wilcoxon rank-sum test gives a p value of 0.07. Since the p value is greater than the significance level of 0.05, the null hypothesis that the mean RStudio test score of male is equal to the mean RStudio test score of female is not rejected. There is no statistical evidence that the mean score of male of 73.33 is greater than the mean score of female of 43.20. Gender is not a factor among the respondents when it comes to their performance in the RStudio test.
 
-```{r echo=F}
+For the RStudio test scores of the respondents when grouped according to have previous programming experience, the Wilcoxon rank-sum test gives a p value of 0.89. Since the p value is greater than the significance level of 0.05, the null hypothesis that the mean RStudio test score of the respondents who have previous programming experience is equal to the mean RStudio test score of the respondents who have no previous programming experience is not rejected. There is no statistical evidence that the mean score of the respondents who have previous programming experience of 56.50 is greater than the mean score of the respondents who have no previous programming experience of 52.50. Having previous programming experience is not a factor among the respondents when it comes to their performance in the RStudio test.
+
+```{r echo=F, warning=F, results='hide'}
 Female<-RStudioTest[data$Gender=="Female"]
 Male<-RStudioTest[data$Gender=="Male"]
-pander(wilcox.test(Male,Female,alternative = "g"))
+pander(wilcox.test(Male,Female))
 ```
 
-## Significant Relationship Between Age and the Technology Readiness Index Scores, the Calculator Test Scores and the RStudio Test Scores of the Respondents
+```{r echo=F, warning=F, results='hide'}
+Yes<-RStudioTest[data$Prog=="Yes"]
+No<-RStudioTest[data$Prog=="No"]
+pander(wilcox.test(Yes,No))
+```
 
-### Technology Readiness Index Scores and Age
+```{r echo=F, warning=F, results='hide'}
+RStudio<-RStudioTest[data$RStudio=="RStudio"]
+Calculator<-RStudioTest[data$RStudio=="Calculator"]
+pander(wilcox.test(RStudio,Calculator))
+```
 
-No significant relationship.
+## Significant Relationship Between Age and the Calculator Test Scores, and age and the RStudio Test Scores of the Respondents
+
+
 
 ### Calculator Test Scores and Age
 
-No Significant relationship.
+```{r echo=F, warning=F}
+Age<-data$Age
+CalculatorTest<-data$CalcTest
+pander(cor.test(Age,CalculatorTest))
+```
 
 ### RStudio Test Scores and Age
 
-No significant relationship.
-
-## Significant Relationship Between the Technology Readiness Index Scores and the RStudio Test Scores of the Respondents
-
-There is no significant relationship.
+```{r echo=F, warning=F}
+Age<-data$Age
+RStudioTest<-data$RStudioTest
+pander(cor.test(Age,RStudioTest))
+```
 
 ## Significant Difference Between the Calculator Test Scores and Rstudio Test Scores Of The Respondents
 
-There is no significant difference.
+```{r echo=F, warning=F}
+RStudioTest<-data$RStudioTest
+CalculatorTest<-data$CalcTest
+pander(wilcox.test(RStudioTest,CalculatorTest))
+```
 
 # Reference
