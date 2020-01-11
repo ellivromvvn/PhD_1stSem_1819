@@ -394,32 +394,39 @@ Calculator<-RStudioTest[data$RStudio=="Calculator"]
 pander(wilcox.test(RStudio,Calculator))
 ```
 
-## Significant Relationship Between Age and the Calculator Test Scores, and age and the RStudio Test Scores of the Respondents
+## Significant Relationship Between Age and the Calculator Test Scores and Between Age and the RStudio Test Scores of the Respondents
 
 
 
 ### Calculator Test Scores and Age
 
+The computed p value and correlation of calculator test scores and age is 0.004 and 0.88 respectively. Table 13 shows that the p value of 0.004 is less than the significance level of 0.05. The null hypothesis that calulator test scores and age are linearly uncorrelated is rejected. At the 5% significance level, the data provide sufficient evidence to conclude that calculator test scores and age are positively linearly correlated. There is a very strong positive correlation. The older the respondent, the better the calculator test score.
+
 ```{r echo=F, warning=F}
 Age<-data$Age
 CalculatorTest<-data$CalcTest
+set.caption("**Table 13:** Pearson’s product-moment correlation: Age and Calculator Test")
 pander(cor.test(Age,CalculatorTest))
 ```
 
 ### RStudio Test Scores and Age
 
-```{r echo=F, warning=F}
+The computed p value and correlation of RStudio test scores and age is 0.12 and 0.59 respectively. The p value of 0.12 is greater than the significance level of 0.05. The null hypothesis that RStudio test scores and age are linearly uncorrelated is not rejected. At the 5% significance level, the data provide no evidence to conclude that RStudio test scores and age are positively linearly correlated. In their RStudio test scores, age does not matter among the respondents.
+
+```{r echo=F, warning=F, results='hide'}
 Age<-data$Age
 RStudioTest<-data$RStudioTest
 pander(cor.test(Age,RStudioTest))
 ```
 
-## Significant Difference Between the Calculator Test Scores and Rstudio Test Scores Of The Respondents
+## Significant Difference Between the Calculator Test Scores and Rstudio Test Scores of The Respondents
 
-```{r echo=F, warning=F}
+Comparing the mean calculator test score and the mean RStudio test score, the Wilcoxon signed rank-sum test gives a p value of 0.25. Since the p value is greater than the significance level of 0.05, the null hypothesis that the mean calculator test score is equal to the mean RStudio test score is not rejected. There is no statistical evidence that the mean RStudio test score of 54.50 is greater than the mean calculator test score of 46.25. The use of RStudio as statistical computing tool in the test has not significantly improved the performance of the respondents.
+
+```{r echo=F, warning=F, results='hide'}
 RStudioTest<-data$RStudioTest
 CalculatorTest<-data$CalcTest
-pander(wilcox.test(RStudioTest,CalculatorTest))
+pander(wilcox.test(RStudioTest,CalculatorTest, paired = T))
 ```
 
 # Reference
