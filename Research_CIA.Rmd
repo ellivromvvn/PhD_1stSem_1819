@@ -129,7 +129,7 @@ pander(a)
 
 ### Have Previous Programming Experience
 
-Among the respondents, half have previos programming experience while the other half have none. Table 2 shows the frequency distribution for have previous programming experience. It seems that some students still have no programming experience when they take their second course in statistics.
+Among the respondents, half have previous programming experience while the other half have none. Table 2 shows the frequency distribution for have previous programming experience. It seems that some students still have no programming experience when they take their second course in statistics.
 
 ```{r echo=F}
 a<-as.data.frame(table(Experienced),stringsAsFactors = F)
@@ -400,7 +400,7 @@ pander(wilcox.test(RStudio,Calculator))
 
 ### Calculator Test Scores and Age
 
-The computed p value and correlation of calculator test scores and age is 0.004 and 0.88 respectively. Table 13 shows that the p value of 0.004 is less than the significance level of 0.05. The null hypothesis that calulator test scores and age are linearly uncorrelated is rejected. At the 5% significance level, the data provide sufficient evidence to conclude that calculator test scores and age are positively linearly correlated. There is a very strong positive correlation. The older the respondent, the better the calculator test score.
+The computed p value and correlation of calculator test scores and age is 0.004 and 0.88 respectively. Table 13 shows that the p value of 0.004 is less than the significance level of 0.05. The null hypothesis that calculator test scores and age are linearly uncorrelated is rejected. At the 5% significance level, the data provide sufficient evidence to conclude that calculator test scores and age are positively linearly correlated. There is a very strong positive correlation. The older the respondent, the better the calculator test score.
 
 ```{r echo=F, warning=F}
 Age<-data$Age
@@ -419,7 +419,7 @@ RStudioTest<-data$RStudioTest
 pander(cor.test(Age,RStudioTest))
 ```
 
-## Significant Difference Between the Calculator Test Scores and Rstudio Test Scores of The Respondents
+## Significant Difference Between the Calculator Test Scores and RStudio Test Scores of The Respondents
 
 Comparing the mean calculator test score and the mean RStudio test score, the Wilcoxon signed rank-sum test gives a p value of 0.25. Since the p value is greater than the significance level of 0.05, the null hypothesis that the mean calculator test score is equal to the mean RStudio test score is not rejected. There is no statistical evidence that the mean RStudio test score of 54.50 is greater than the mean calculator test score of 46.25. The use of RStudio as statistical computing tool in the test has not significantly improved the performance of the respondents.
 
