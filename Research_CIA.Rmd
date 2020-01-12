@@ -8,6 +8,10 @@ csl: apa.csl
 
 # Introduction
 
+## The Researcher's Standpoint
+
+
+
 ## Rationale
 
 The practice of statistics is computational. Statistical computing software are mainly used to do statistical computing. With the emergence of data science as a field due to big data, machine learning and powerful computers that are no longer expensive all brought about by the 4th industrial revolution, it is very fitting to consider how statistics education should adapt to these changes and be relevant in the practice of statistics. In this regard, in 2005, @franklin07 put forth the Guidelines for Assessment and Instruction in Statistics Education (GAISE) Report recommending a framework for statistics education both in the k to 12 and college level. In 2016, the @GCR16 revisited the effectiveness of the framework and still found it effective. The framework is now the standard in statistics education in the United States and in many countries that adopted it [@zieffler18].
