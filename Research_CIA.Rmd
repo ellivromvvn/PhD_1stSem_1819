@@ -6,7 +6,7 @@ bibliography: biblio.bib
 csl: apa.csl
 ---
 
-# Introduction
+# INTRODUCTION
 
 ## The Researcher's Standpoint
 
@@ -24,7 +24,7 @@ The next section will highlight the necessity of this study in a bigger context.
 
 The practice of statistics is computational. Statistical computing software are mainly used to do statistical computing. With the emergence of data science as a field due to big data, machine learning and powerful computers that are no longer expensive all brought about by the 4th industrial revolution, it is very fitting to consider how statistics education should adapt to these changes and be relevant in the practice of statistics. In this regard, in 2005, @franklin07 put forth the Guidelines for Assessment and Instruction in Statistics Education (GAISE) Report recommending a framework for statistics education both in the k to 12 and college level. In 2016, the @GCR16 revisited the effectiveness of the framework and still found it effective. The framework is now the standard in statistics education in the United States and in many countries that adopted it [@zieffler18].
 
-In the GAISE report, one noteworthy recommendation is "the use of technology to explore concepts and analyze data". Studies have shown that the use of technology can really improve statistics education; equipping learners with relevant data skills and effective powerful tools in this era where data is very much abundant [@doi16; @chance06; @chance07; @harraway12; @CR17; @stander17].  However, when it comes to software used in doing statistical computing and teaching statistics, there is no single statistical computing tool that fits all statistical tasks [@mcnamara18]. Nonetheless, introductory statistics students should be taught a common statistical computing software such as SAS, SPSS, or R [@R], enthusing them to continuously learn statistics technology since statistical tools are diverse and eventually evolve through time [@gould18a]. Moreover, @gould10, @horton15a, @horton15 and @hardin15 pointed out the importance of developing among students -- with the use of statistical computing software -- data management skills in introductory and second courses in statistics.
+In the GAISE report, one noteworthy recommendation is "the use of technology to explore concepts and analyze data". Studies have shown that the use of technology can really improve statistics education; equipping learners with relevant data skills and effective powerful tools in this era where data is very much abundant [@doi16; @chance06; @chance07; @harraway12; @CR17; @stander17].  However, when it comes to software used in doing statistical computing and teaching statistics, there is no single statistical computing tool that fits all statistical tasks [@mcnamara18]. Nonetheless, introductory statistics students should be taught a common statistical computing software such as SAS, SPSS, or R, enthusing them to continuously learn statistics technology since statistical tools are diverse and eventually evolve through time [@gould18a]. Moreover, @gould10, @horton15a, @horton15 and @hardin15 pointed out the importance of developing among students -- with the use of statistical computing software -- data management skills in introductory and second courses in statistics.
 
 In our country, leading universities are addressing this issue and have already integrated the use of technology in their curriculum for statistics education. The University of the Philippines for example uses a number of software in its introductory statistics courses and statistics courses (eg. R with RStudio, Python, SAS, SPSS, Stata, MS Excel, QGIS, ArcGIS, Gephi, yEd Graph Editor, and more). Most of the software used are opensource. 
 
@@ -98,7 +98,7 @@ The independent variables are the profile variables of the respondents. There ar
 
 ## Scope of the Study
 
-The respondents of the study are the BSEd Mathematics students who are taking their second course in statistics at CTE, NVSU.
+The study focused on independent and dependent variables data gathered from the BSEd Mathematics students who are taking their second course in statistics at CTE, NVSU.
 
 ## Definition of Terms
 
@@ -114,7 +114,7 @@ The respondents of the study are the BSEd Mathematics students who are taking th
 
 - **test** - the test referred to in the study is the same test taken in the calculator test and in the RStudio test.
 
-# Review of Related Literature and Studies
+# REVIEW OF RELATED LITERATURE
 
 This part focuses on the chosen literatures which I think are most relevant in my study. After reviewing significant literatures, there are two themes I have generated: a) the necessity of statistics education and its current landscape and b) R using RStudio in teaching statistics. These will be discussed in the following sections of the paper.
 
@@ -146,7 +146,7 @@ However, “the rapid development of data science… provides challenges for sta
 
 >What are the areas where statistics may need to adapt to be relevant to data science? In addition to pedagogy and content, technology is a key realm. While the Guidelines for Assessment and Instruction in Statistics Education (GAISE) K-12 (2005) and College (2016) reports encouraged the use of technology (which, on a more positive note, is now widespread in most courses), hundreds of thousands of high school students still use calculators rather than computers for their analyses, limiting their ability to move beyond simple calculations or gain any sense of realistic workflows that they might encounter in the real world. But much worse, it also narrowly constricts their vision of what statistics is and can be and neglects the huge potential of the visual sense for gaining insights from data [@wild18]. 
 
-Given these challenges of statistics education in terms of pedagogy and content, one factor to consider is technology: most students use calculator over computer in statistical analyses. Aside from this, statistics can be seen in both perspectives wherein “despite the increasing awareness of the importance of statistical literacy, statistics has been viewed by many students as difficult and unpleasant to learn” [@benzvi16]. On the other hand, “many university instructors find statistics and research methods courses equally frustrating and unrewarding to teach” [@benzvi16]. Not only that, “in schools, mathematics teachers often view statistics as a marginal strand in the mathematics curriculum and therefore minimize or ignore its teaching” [@benzvi16].  Hence, it is no wonder how one article describes the dilemma of learning and teaching statistics wherein “many countries still lack sufficient resources, updated curriculum materials, effective professional development of teachers, and current technologies, infrastructure essential to carry on the reform movement in statistics education” [@macg14].
+Given these challenges of statistics education in terms of pedagogy and content, one factor to consider is technology: most students use calculator over computer in statistical analyses. Aside from this, statistics can be seen in both perspectives wherein “despite the increasing awareness of the importance of statistical literacy, statistics has been viewed by many students as difficult and unpleasant to learn” [@benzvi16]. On the other hand, “many university instructors find statistics and research methods courses equally frustrating and unrewarding to teach” (ibid.). Not only that, “in schools, mathematics teachers often view statistics as a marginal strand in the mathematics curriculum and therefore minimize or ignore its teaching” (ibid.). Hence, it is no wonder how one article describes the dilemma of learning and teaching statistics wherein “many countries still lack sufficient resources, updated curriculum materials, effective professional development of teachers, and current technologies, infrastructure essential to carry on the reform movement in statistics education” [@macg14].
 
 With this background on learning and teaching statistics, as well as on issues of statistics in researches, it is hope that this preliminary study will somehow fill in the gaps as pointed out in different literatures. This is where my study would like to investigate.
 
@@ -164,7 +164,7 @@ During the 1900, statistics paved way to more developments:
 
 >Another wave of activity into the 1920s was initiated by the concerns of William Gosset, reaching its culmination in the insights of Ronald Fisher with the development of experimental design, analysis of variance, maximum likelihood estimation, and refinement of significance testing. This was followed by the collaboration of Egon Pearson and Jerzy Neyman in the 1930s, giving rise to hypothesis testing and confidence intervals. At about the same time came Bruno de Finetti’s seminal work on subjective Bayesian inference and Harold Jeffreys’s work on “objective” Bayesian inference so that by 1940 we had most of the basics of the theories of the “modern statistics” of the twentieth century. World War II was also a time of great progress as a result of drafting many young, mathematically gifted people into positions where they had to find timely answers to problems related to the war effort. Many of them stayed in the field of statistics swelling the profession. We also draw particular attention to John Tukey’s introduction of “exploratory data analysis” in the 1970s; this is an approach to data analysis that involves applying a variety of exploratory techniques, many of them visual, to gain insight into a dataset and uncover underlying structure and exceptions [@wild18]. 
 
-Conversely, along with the development of statistics is the formation of local, national and international associations and conferences in different parts of the world solely dedicated on statistics “whose overall mission is to promote the understanding, development and good practice of statistics worldwide” [@macg14]. Example of these are The International Association for Statistical Education (IASE) is one of the Associations of the International Statistical Institute (ISI) which was founded in 1885, then the first international roundtable on statistics education was held in 1968, and the first International Conference on Teaching Statistics (ICOTS) was held in 1982” [@macg14].  Way back then, statistics continues to thrive as the IASE organizes satellite conferences to the biennial ISI World Statistics Congresses (WSC), statistical education strands within the WSC, and international roundtables every 4 years.  Nonetheless, in order to promote statistics at its core, there are also options of publishing one’s researches wherein “IASE offers an optional double-blinded refereeing process and publishes proceedings, now online” [@macg14].
+Conversely, along with the development of statistics is the formation of local, national and international associations and conferences in different parts of the world solely dedicated on statistics “whose overall mission is to promote the understanding, development and good practice of statistics worldwide” [@macg14]. Example of these are The International Association for Statistical Education (IASE) is one of the Associations of the International Statistical Institute (ISI) which was founded in 1885, then the first international roundtable on statistics education was held in 1968, and the first International Conference on Teaching Statistics (ICOTS) was held in 1982” (ibid.).  Way back then, statistics continues to thrive as the IASE organizes satellite conferences to the biennial ISI World Statistics Congresses (WSC), statistical education strands within the WSC, and international roundtables every 4 years.  Nonetheless, in order to promote statistics at its core, there are also options of publishing one’s researches wherein “IASE offers an optional double-blinded refereeing process and publishes proceedings, now online” (ibid.).
 
 #### Local Perspective: The Philippine Context
 
@@ -213,35 +213,38 @@ Interestingly, with these innovations and variations in teaching R with students
 
 Hence, @gomes18 conclude that teaching with R could be a blessing if the right buttons of activities and even academic environments blend well. This is true as they conclude that “starting this process even at an early stage in school will most certainly contribute not only to the improvement of teaching methodologies, but also to the promotion of statistical literacy among students and teachers”.
 
-# Methodology
+# METHODOLOGY
 
-
+The following sections will discuss the research methodology that was employed to answer the research questions.
 
 ## Research Design
 
+The research design is a poor experimental design: One group pre-test--post-test study. This design includes a pre-test measure followed by a treatment and a post-test for a single group. The pre-test's content is the same as the post-test's. The difference is the statistical computating tool used by the respondents to answer the test. In the pre-test, the respondents used calculator. In the post-test, the respondents used RStudio. The treatment is introducing the basics of RStudio in statistical computing. Figure 2 shows a simple diagram of the one group pre-test--post-test study. The mean calculator test score and the mean RStudio test score were compared to see any significant improvement in the test scores of the respondents.
 
+![**Figure 2.** One Group Pre-Test--Post-Test Study](onegroupprepost.jpg)
 
 ## Research Environment
 
-
+The research environment is CTE, NVSU.
 
 ## Respondents
 
-
+The respondents of the study are BSEd Mathematics students taking Inferential Statistics in CTE, NVSU.
 
 ## Research Instruments
 
-
+The research instrument is a survey questionnaire for the profile variables (see Appendix A).
 
 ## Data Gathering Procedure
 
-
+Data was gathered by conducting the calculator test and RStudio test to the respondents. The survey questionnaire was administered after the post-test or the RStudio test.
 
 ## Data Analysis
 
+The non-parametric Wilcoxon rank-sum test -- an alternative to Student's *t* test -- was performed to see whether there is significant difference in the mean calculator test score and in the mean RStudio test score when grouped according to profile variables. A Wilcoxon rank-sum test is suitable because the distribution of the calculator test scores and RStudio test scores is unknown, and the samples are small.
+The Pearson's product-moment correlation was computed to see whether there is significant relationship between age and calculator test scores and age and RStudio test scores. The signed Wilcoxon signed rank-sum test was performed to see whether there is significant difference between the mean calculator test score and RStudio test score since the scores are paired. The statistical computing tool used in the study is RStudio.
 
-
-# Results and Discussion
+# RESULTS AND DISCUSSION
 
 ```{r echo=F, message=F}
 load("~/R/PhD_1stSem_1819/raw_data.RData")
@@ -568,5 +571,41 @@ RStudioTest<-data$RStudioTest
 CalculatorTest<-data$CalcTest
 pander(wilcox.test(RStudioTest,CalculatorTest, paired = T))
 ```
+
+# SUMMARY, CONCLUSION AND RECOMMENDATIONS
+
+## Summary
+
+Based on the discussion of results, here are the salient points of my study:
+
+1.	The profile variables of the respondents considered in the study are gender, previous programming experience, and statistical computing preference using calculator or RStudio. The results showed that out of 8 students enrolled in second statistics course, there are more female enrolled compared to male wherein the age of the respondents ranges from 21 to 39 years old.
+
+2.	With regard to previous programming experience and statistical computing preference using calculator or RStudio, both items gained an equal answer of yes and no as well as equal answer with using calculator or RStudio.
+
+3.	Age is a factor in calculator test, that the older the respondent, the better is the calculator test result. It seems that the result suggests that the older a respondent is, means that they are more attached in/to using the “traditional method of doing statistics” which is calculator. 
+
+4.	In terms of using RStudio as a statistical tool, the results showed that gender and previous programming experience are not factors in using RStudio. This may suggest that learning RStudio as a statistical tool does not need programming experience, that it can be easily learned which can be a friendly-user software as long as students are interested in learning its features. Hence, using RStudio could be a “blessing and not a curse” as some authors coined it. 
+
+5.	Most students failed the calculator test in statistics while many passed the statistics exam using the RStudio. This may suggest that using technology in teaching statistics has a “bright future” as Bersales (2010) termed it.  With today’s young generation of 4th Industrial revolution, where technology is everywhere, it seems that learning and teaching statistics should be abreast with the digital age we live in. 
+
+6.	On the other hand, the use of RStudio as statistical computing tool in the test has not significantly improved the performance of the respondents. This result may suggest that with the advent of digital age, students should be abreast with technological advancement, especially with courses and subjects that need mathematical and computer laboratories
+
+## Conclusion
+
+This study then concludes that using RStudio as a computing tool may have an impact with students taking second subject statistics. Hence, teachers and students may both benefit if technology will be used in teaching statistics. Thus, this may also serve as departure points for degree course program developments and policy formulation to statistics and mathematics courses and subjects.
+
+## Recommendations
+
+This study would recommend the following for future researches:
+
+1.	Increase the number of respondents as well as to sample respondents from other state universities who have taken the same statistics subject.
+
+2.	Do the survey to high school students such as Philippine Science High School Region II.
+
+3.	Consider other variables for correlation such as educational background (i.e. high school graduated from, K-12 strand and academic standing.
+
+4.	Explore other statistical software as measurement of technology readiness of students aside from RStudio.
+
+5.	Results can be channeled to the department, college and university officials for possible curriculum enhancement/ revision to suit the digital age.
 
 # Reference

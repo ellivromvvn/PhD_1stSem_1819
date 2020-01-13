@@ -1,0 +1,5 @@
+1. Gender
+2. Age
+3. Have you done programming before? (Yes or No)
+4. Which do you prefer in doing statistical computation, using calculator
+   or using RStudio? Why?
