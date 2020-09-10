@@ -578,17 +578,17 @@ pander(wilcox.test(RStudioTest,CalculatorTest, paired = T))
 
 Based on the discussion of results, here are the salient points of my study:
 
-1.	The profile variables of the respondents considered in the study are gender, previous programming experience, and statistical computing preference using calculator or RStudio. The results showed that out of 8 students enrolled in second statistics course, there are more female enrolled compared to male wherein the age of the respondents ranges from 21 to 39 years old.
+1.	The profile variables of the respondents considered in the study are gender, previous programming experience, statistical computing preference using calculator or RStudio, and age. The results showed that most of the respondents are female wherein the age of the respondents ranges from 21 to 39 years old. However, most of the respondents are 21 and 22 years old. It appears that some students still have no previous programming experience when they reach college and take their second course in statistics. Finally, half of the students prefer using calculator and half prefer using RStudio in their statistical computing tasks.
 
-2.	With regard to previous programming experience and statistical computing preference using calculator or RStudio, both items gained an equal answer of yes and no as well as equal answer with using calculator or RStudio.
+2.	When it comes to the calculator test scores of the respondents majority got a failing score. On the other hand, majority got a passing score in the RStudio test.
 
-3.	Age is a factor in calculator test, that the older the respondent, the better is the calculator test result. It seems that the result suggests that the older a respondent is, means that they are more attached in/to using the “traditional method of doing statistics” which is calculator. 
+3.	According to gender, majority of the female failed in both the calculator test and RStudio test. On the other hand, majority of the male passed in both the calculator test and RStudio test. For those who have no previous programming experience, half passed and half failed on both tests. On the other hand, majority of those who have previous programming experience failed in the calculator test but then majority passed in the RStudio test. Moreover, among those who preferred using calculator, majority failed in the calculator test and half passed and half failed in the RStudio test. Half passed and half failed in the calculator test for those who preferred RStudio but then majority passed in the RStudio test.
 
-4.	In terms of using RStudio as a statistical tool, the results showed that gender and previous programming experience are not factors in using RStudio. This may suggest that learning RStudio as a statistical tool does not need programming experience, that it can be easily learned which can be a friendly-user software as long as students are interested in learning its features. Hence, using RStudio could be a “blessing and not a curse” as some authors coined it. 
+4. There is no significant difference in the calculator test scores and rstudio test scores of the respondents when grouped according to gender and their previous programming experience. The same result is also true with regards to their RStudio test scores. This may suggest that learning RStudio as a statistical tool does not need programming experience, that it can be easily learned which can be a user-friendly software as long as students are interested in learning its features. Hence, using RStudio could be a “blessing and not a curse” as some authors coined it. 
 
-5.	Most students failed the calculator test in statistics while many passed the statistics exam using the RStudio. This may suggest that using technology in teaching statistics has a “bright future” as Bersales (2010) termed it.  With today’s young generation of 4th Industrial revolution, where technology is everywhere, it seems that learning and teaching statistics should be abreast with the digital age we live in. 
+5. Age is a factor in the calculator test, the older the respondent, the better is the calculator test result. It seems that the result suggests that the older a respondent, the more they are attached to using the “traditional method of doing statistics” which is using a calculator.
 
-6.	On the other hand, the use of RStudio as statistical computing tool in the test has not significantly improved the performance of the respondents. This result may suggest that with the advent of digital age, students should be abreast with technological advancement, especially with courses and subjects that need mathematical and computer laboratories
+6. Most students failed the calculator test while many passed the test using RStudio. This may suggest that using RStudio in teaching statistics has a “bright future” as @bersales10 termed it.  With today’s young generation of 4th Industrial revolution, where technology is everywhere, it seems that learning and teaching statistics should be abreast with the digital age we live in. On the other hand, the use of RStudio as statistical computing tool in the test has not significantly improved the performance of the respondents. This result may suggest that with the advent of digital age, students should be abreast with technological advancement, especially with courses and subjects that need mathematical and computer laboratories.
 
 ## Conclusion
 
@@ -598,14 +598,14 @@ This study then concludes that using RStudio as a computing tool may have an imp
 
 This study would recommend the following for future researches:
 
-1.	Increase the number of respondents as well as to sample respondents from other state universities who have taken the same statistics subject.
+1. Explore appropriate true experimental designs. Increase the number of respondents as well as to sample respondents from other state universities who have taken the same statistics subject.
 
-2.	Do the survey to high school students such as Philippine Science High School Region II.
+2. Do the survey to high school students such as Philippine Science High School Region II.
 
-3.	Consider other variables for correlation such as educational background (i.e. high school graduated from, K-12 strand and academic standing.
+3. Consider other variables for correlation such as educational background (i.e. high school graduated from, K-12 strand and academic standing.
 
-4.	Explore other statistical software as measurement of technology readiness of students aside from RStudio.
+4. Explore other statistical software as measurement of technology readiness of students aside from RStudio.
 
-5.	Results can be channeled to the department, college and university officials for possible curriculum enhancement/ revision to suit the digital age.
+5. Results can be channeled to the department, college and university officials for possible curriculum enhancement/ revision to suit the digital age.
 
-# Reference
+# References
