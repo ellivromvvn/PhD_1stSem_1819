@@ -1,0 +1,157 @@
+---
+title: "Final Examination in Theory and Functions of Real Variable"
+author: "Orville D. Hombrebueno"
+date: "9/14/2020"
+bibliography: FE.bib
+output: pdf_document
+fontsize: 12pt
+csl: apa.csl
+nocite: '@*'
+header-includes:
+- \usepackage{booktabs}
+- \usepackage{sectsty} \sectionfont{\centering}
+---
+**Theorem 1.1.8** *If a nonempty set $S$ of real numbers is bounded below, then $\text{inf}\;S$ is the unique real number $\alpha$ such that*
+
+**(a)** *$x\ge\alpha$ for all $x$ in $S$;*
+
+**(b)** *if $\epsilon> 0$* (*no matter how small*)*, there is an $x_0$ in $S$ such that $x_0<\alpha+\epsilon$.*
+
+**Proof** The set $T=\{x|-x\in S\}$ is bounded above if $S$ is bounded below. If $S$ is bounded below then $T$ is bounded above, so $T$ has a unique supremum, by Theorem 1.1.3. Denote $\text{sup}\; T=-\alpha$. Then (i) if $x\in S$ then $-x\le-\alpha$, so $x\ge\alpha$; (ii) if $\epsilon>0$ there is an $x_0\in T$ such that $-x_0<-\alpha-\epsilon$, so $x_0>\alpha+\epsilon$. Therefore, there is an $\alpha$ with properties (i) and (ii). If (i) and (ii) hold with $\alpha$ replaced by $\alpha_1$ then $-\alpha_1$ is a supremum of $T$, so $\alpha_1=\alpha$ by the uniqueness assertion of Theorem 1.1.3. \hfill $\blacksquare$
+\
+\
+**Theorem 1.3.3**
+
+**(a)** *The union of open sets is open.*
+
+**(b)** *The intersection of closed sets is closed.*
+
+*These statements apply to arbitrary collections, finite or infinite, of open and closed sets.*
+
+**Additional Proof** In **(b)**, showing that $T^c=\cup\{F^c|F\in\mathcal{F}\}$ where $\mathcal{F}$ is a collection of closed sets and $T=\cap\{F|F\in\mathcal{F}\}$ we have $x\in T^c\Leftrightarrow x\in F^c$ for some $F$ in $F\Leftrightarrow x\in\cup\{F^c|F\in F\}$.\hfill $\blacksquare$
+\
+\
+**Theorem 1.3.7 (Heine-Borel Theorem)** *If $\mathcal{H}$ is an open covering of a closed and bounded subset $S$ of the real line, then $S$ has an open covering $\widetilde{\mathcal{H}}$ consisting of finitely many open sets belonging to $\mathcal{H}$.*
+
+**Additional Proof** If $\epsilon>0$, then $S\cap(\beta-\epsilon,\beta)\neq\emptyset$ and $S^c\cap(\beta,\beta+\epsilon)\neq\emptyset$. Hence, if $S$ is bounded above and $\beta=\text{sup}\;S$, then $\beta\in \partial S$. Analogously, If $S$ is bounded below and $\alpha=\text{inf}\;S$ then $\alpha\in \partial S$. Therefore, the $\text{inf}\;S$ and $\text{sup}\;S$ are in $\partial S$.
+\vspace{6pt}\
+(a) If $x_0\in\partial S$ and $U$ is a neighborhood of $x_0$ then, (A) $U\cap S\neq\emptyset$. If $x_0$ is not a limit point of $S$, then (B) $U\cap(S-\{x_0\})=\emptyset$ for some $U$. Now (A) and (B) imply that $x_0\in S$, and (B) implies that $x_0$ is an isolated point of $S$. Therefore, a boundary point of a set $S$ is either a limit point or an isolated point of $S$. (b) If $S$ is closed, Corollary 1.3.6 and (a) imply that $\partial S\subset S$; hence, $\overline{S}=S\cup\partial S=S$. If $\overline{S}=S$, then $\partial S\subset S$. Now, if $x_0$ is a limit point of $S$, then every neighborhood of $x_0$ contains points of $S$ other than $x_0$. If every neighborhood of $x_0$ also contains a point in $S^c$, then $x_0\in\partial S$. If there is a neighborhood of $x_0$ that does not contain a point in $S^c$, then $x_0\in S^0$. These are the only possibilities. Therefore, a limit point of a set $S$ is either an interior point or a boundary point of $S$. By this and Corollary 1.3.6 and since $S^0\subset S$, $S$ is closed. Hence, $\partial S\subset S$ if $S$ is closed.
+
+Therefore, If $S$ is closed and bounded, then $\text{inf}\;S$ and $\text{sup}\;S$ are both in $S$.\hfill $\blacksquare$
+\
+\
+**Theorem 2.1.6** *A function $f$ has a limit at $x_0$ if and only if it has left- and right-hand limits at $x_0$, and they are equal. More specifically, $$\lim_{x\to x_0} f(x)=L$$ if and only if $$f(x_0+)=f(x_0-)=L.$$*
+
+**Proof** It follows immediately from Definition 2.1.2 and Definition 2.1.5 that the existence of the limit implies the existence of the left- and right-hand limits with the same value. Conversely, if both left- and right-hand limits exists and are equal to $L$, then given $\epsilon>0$, there exist $\delta_1>0$ and $\delta_2>0$ such that $x_0-\delta_1<x<x_0$ implies that $|f(x)-L|<\epsilon$, $x_0<x<x_0+\delta_2$ implies that $|f(x)-L|<\epsilon$. Choosing $\delta=\min(\delta_1,\delta_2)>0$, we get that $|x-x_0|<\delta$ implies that $|f(x)-L|<\epsilon$, which show that the limit exist.\hfill $\blacksquare$
+\
+\
+**Theorem 2.1.9** *Suppose that $f$ is monotonic on $(a,b)$ and define $$\alpha=\inf_{a<x<b}f(x)\;\;\;and\;\;\;\beta=\sup_{a<x<b}f(x).$$*
+
+**(a)** *If $f$ is nondecreasing, then $f(a+)=\alpha$ and $f(b-)=\beta$.*
+
+**(b)** *If $f$ is nonincreasing, then $f(a+)=\beta$ and $f(b-)=\alpha.$*
+
+*(Here $a+=-\infty$ if $a=-\infty$ and $b-=\infty$ if $b=\infty$.)*
+
+**(c)** *If $a<x_0<b$, then $f(x_0+)$ and $f(x_0-)$ exist and are finite; moreover, $$f(x_0-)\leq f(x_0)\leq f(x_0+)$$ if $f$ is nondecreasing, and $$f(x_0-)\geq f(x_0)\geq f(x_0+)$$ if $f$ is nonincreasing.*
+
+**Additional Proof** **(b)** We first prove that $f(a+)=\beta$. If $M<\beta$ there is an $x_0$ in $(a,b)$ such that $f(x_0)>M$. Since $f$ is nonincreasing, $f(x)>M$ if $a<x<x_0$. Therefore, if $\beta=\infty$ then $f(a+)=\infty$. If $\beta<\infty$ let $M=\beta-\epsilon$ where $\epsilon>0$. Then $\beta-\epsilon<f(x)\leq\beta+\epsilon$, so $$|f(x)-\beta|<\epsilon\;\;\;\text{if}\;\;\;a<x<x_0.\tag{A}$$ If $a=-\infty$ this implies that $f(-\infty)=\beta$. If $a>-\infty$ let $\delta=x_0-a$. Then (A) is equivalent to $$|f(x)-\beta|<\epsilon\;\;\;\text{if}\;\;\;a<x<a+\delta,$$ which implies that $f(a+)=\beta$.
+
+Now we prove that $f(b-)=\alpha$. If $M>\alpha$ there is an $x_0$ in $(a,b)$ such that $f(x_0)<M$. Since $f$ is nonincreasing, $f(x)<M$ if $x_0<x<b$. Therefore, if $\alpha=-\infty$ then $f(b-)=-\infty$. If $\alpha>-\infty$ let $M=\alpha+\epsilon$ where $\epsilon>0$. Then $\alpha\leq f(x)<\alpha+\epsilon$, so $$|f(x)-\alpha|<\epsilon\;\;\;\text{if}\;\;\;x_0<x<b.\tag{B}$$ If $b=\infty$ this implies that $f(\infty)=\alpha$. If $b<\infty$ let $\delta=b-x_0$. Then (B) is equivalent to $$|f(x)-\alpha|<\epsilon\;\;\;\text{if}\;\;\;b-\delta<x<b,$$ which implies that $f(b-)=\alpha$.
+
+**(c)** Applying **(b)** to $f$ on $(a,x_0)$ and $(x_0,b)$ separately shows that $$f(x_0-)=\inf_{a<x_1<x_0}f(x_1)\;\;\;\text{and}\;\;\; f(x_0+)=\sup_{x_0<x_2<b}f(x_2).$$ However, if $x_1<x_0<x_2$ then $f(x_1)\geq f(x_0)\geq f(x_2)$; hence $f(x_0-)\geq f(x_0)\geq f(x_0+)$.\hfill $\blacksquare$
+\
+\
+**Theorem 2.2.9** *Suppose that $f$ is continuous on a finite closed interval $[a,b]$. Let $$\alpha=\inf_{a\leq x\leq b}f(x)\;\;\; and \;\;\; \beta=\sup_{a\leq x\leq b}f(x).$$ Then $\alpha$ and $\beta$ are respectively the minimum and maximum of $f$ on $[a,b]$; that is, there are points $x_1$ and $x_2$ in $[a,b]$ such that $$f(x_1)=\alpha\;\;\; and \;\;\; f(x_2)=\beta.$$*
+
+**Additional Proof** Showing that there is an $x_2$ such that $f(x_2)=\beta$, suppose there is no $x_2$ in $[a,b]$ such that $f(x_2)=\beta$. Then $f(x)<\beta$ for all $x\in [a,b]$. We will show that this leads to a contradiction. Suppose $t\in[a,b]$. Then $f(t)<\beta$, so $f(t)<(f(t)+\beta)/2<\beta$. Since $f$ is continuous at $t$, there is an open interval $I_t$ about $t$ such that (A) $f(x)<(f(t)+\beta)/2$ if $x\in I_t\cap[a,b]$. The collection $H=\{I_t|a\leq t\leq b\}$ is an open covering of $[a,b]$. Since $[a,b]$ is compact, the Heine-Borel theorem implies that there are finitely many points $t_1,t_2,\ldots,t_n$ such that the intervals $I_{t1},I_{t2},\ldots,I_{tn}$ cover $[a,b]$. Define $\beta_1=\max \{(f(t_i)+\beta)/2|1\leq i\leq n\}$. Then, since $[a,b]\subset\bigcup_{i=1}^n(I_{ti}\cap[a,b])$, (A) implies that $f(x)<\beta_1(a\leq t\leq b)$. But $\beta_1<\beta$, so this contradicts the definition of $\beta$. Therefore $f(x_2)=\beta$ for some $x_2$ in $[a,b]$.\hfill $\blacksquare$
+\
+\
+**Theorem 2.2.14** *If $f$ is monotonic and nonconstant on $[a,b]$, then $f$ is continuous on $[a,b]$ if and only if its range $R_f=\{f(x)|x\in[a,b]\}$ is the closed interval with endpoints $f(a)$ and $f(b)$.*
+
+**Proof** In the case where $f$ is nonincreasing, Theorem 2.1.9(b) implies that the set $\widetilde{R_f}=\{f(x)|x\in(a,b)\}$ is a subset of the open interval $(f(b-),f(a+))$. Therefore $$R_f=\{f(b)\}\cup\widetilde{R_f}\cup\{f(a)\}\subset\{f(b)\}\cup(f(b-),f(a+))\cup\{f(a)\}.\tag{A}$$ Now suppose $f$ is continuous on $[a,b]$. Then $f(a)=f(a+),\;f(b-)=f(b)$, so (A) implies that $R_f\subset[f(b),f(a)]$. If $f(b)<\mu<f(a)$, then Theorem 2.2.10 implies that $\mu=f(x)$ for some $x$ in $(a,b)$. Hence, $R_f=[f(b),f(a)]$.
+
+For the converse, suppose $R_f=[f(b),f(a)]$. Since $f(a)\geq f(a+)$ and $f(b-)\geq f(b)$, (A) implies that $f(a)=f(a+)$ and $f(b-)=f(b)$. We know from Theorem 2.1.9(c) that if $f$ is nonincreasing and $a<x_0<b$, then $f(x_0-)\geq f(x_0)\geq f(x_0+)$. If either of these inequalities is strict, then $R_f$ cannot be an interval. Since this contradicts our assumption, $f(x_0-)=f(x_0)=f(x_0+)$. Therefore $f$ is continuous at $x_0$. We can now conclude that $f$ is continuous on $[a,b]$.\hfill $\blacksquare$
+\
+\
+**Theorem 2.3.4** *If $f$ and $g$ are differentiable at $x_0$, then so are $f+g,\;f-g,$ and $fg$, with*
+
+**(a)** $(f+g)'(x_0)=f'(x_0)+g'(x_0)$;
+
+**(b)** $(f-g)'(x_0)=f'(x_0)-g'(x_0)$;
+
+**(c)** $(fg)'(x_0)=f'(x_0)g(x_0)+f(x_0)g'(x_0)$.
+
+*The quotient $f/g$ is differentiable at $x_0$ if $g(x_0)\neq 0$, with*
+
+**(d)** $\left(\dfrac{f}{g}\right)'(x_0)=\dfrac{f'(x_0)g(x_0)-f(x_0)g'(x_0)}{[g(x_0)]^2}.$
+
+**Additional Proof**
+
+**(a)**
+\begin{align*}
+\lim_{x\to x_0} \dfrac{(f+g)(x)-(f+g)(x_0)}{x-x_0} &= \lim_{x\to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}+\lim_{x\to x_0}\dfrac{g(x)-g(x_0)}{x-x_0}\\
+&=f'(x_0)+g'(x_0).
+\end{align*}
+
+**(b)**
+\begin{align*}
+\lim_{x\to x_0} \dfrac{(f-g)(x)-(f-g)(x_0)}{x-x_0} &= \lim_{x\to x_0} \dfrac{f(x)-f(x_0)}{x-x_0}-\lim_{x\to x_0}\dfrac{g(x)-g(x_0)}{x-x_0}\\
+&=f'(x_0)-g'(x_0).
+\end{align*}
+
+**(d)**
+\begin{align*}
+\lim_{x\to x_0}\dfrac{(f/g)(x)-(f/g)(x_0)}{(x-x_0)} &= \lim_{x\to x_0}\dfrac{f(x)g(x_0)-f(x_0)g(x)}{(x-x_0)g(x)g(x_0)}\\
+&=\lim_{x\to x_0}\dfrac{[f(x)g(x_0)-f(x_0)g(x_0)+f(x_0)g(x_0)-f(x_0)g(x)]}{(x-x_0)g(x)g(x_0)}\\
+&=\lim_{x\to x_0}\dfrac{1}{g(x)}\lim_{x\to x_0}\dfrac{f(x)-f(x_0)}{x-x_0}\\
+&\;\;\;\;+\dfrac{f(x_0)}{g(x_0)}\lim_{x\to x_0}\dfrac{1}{g(x)}\lim_{x\to x_0}\dfrac{g(x)-g(x_0)}{x-x_0}\\
+&=\dfrac{f'(x_0)g(x_0)-f(x_0)g'(x_0)}{(g(x_0))^2}.
+\end{align*}
+\hfill $\blacksquare$
+\
+\
+**Theorem 2.4.1 (L'Hospital's Rule)** *Suppose that $f$ and $g$ are differentiable and $g'$ has no zeros on $(a,b)$. Let $$\lim_{x\to b-}f(x)=\lim_{x\to b-}g(x)=0$$ or $$\lim_{x\to b-}f(x)\pm\infty\;\;\; and\;\;\;\lim_{x\to b-}g(x)=\pm\infty,$$ and suppose that $$\lim_{x\to b-}\dfrac{f'(x)}{g'(x)}=L\;\;\;(finite\; or\;\pm\infty).$$ Then $$\lim_{x\to b-}\dfrac{f(x)}{g(x)}=L.$$*
+
+**Additional Proof** For the case where $\displaystyle\lim_{x\to b-}\dfrac{f'(x)}{g'(x)}=\pm\infty$, If $\displaystyle\lim_{x\to b-}\dfrac{f'(x)}{g'(x)}=\infty$ and $M$ is an arbitrary real number, there is an $x_0$ in $(a,b)$ such that $\dfrac{f'(c)}{g'(c)}>M$ if $x_0<c<b$. By the argument given in the text, we can assume also that $g$ has no zeros in $[x_0,b)$ and (A) $\dfrac{f(x)-f(t)}{g(x)-g(t)}>M$ if $x,t\in [x_0,b)$. If $\displaystyle\lim_{t\to b-}f(t)=\lim_{t\to b-}g(t)=0$ then letting $t\to b-$ in (A) shows that $\dfrac{f(x)}{g(x)}\geq M$ if $x,t\in[x_0,b)$, so $\displaystyle\lim_{x\to b-}\dfrac{f(x)}{g(x)}=\infty$ in this case. If $\displaystyle\lim_{t\to b-}f(t)=\lim_{t\to b-}g(t)=\infty$, let $u$ and $x_1$ be as in the proof given in the text. Then (B) $\dfrac{f(x)}{g(x)u(x)}>M$ if $x_1<x<b$. Since $\displaystyle\lim_{x\to b-}u(x)=1$, there is an $x_2\geq x_1$ such that $u(x)\geq\dfrac{1}{2}$ if $x_2<x<b$. Therefore, (B) implies that $\dfrac{f(x)}{g(x)}>\dfrac{M}{2}$ if $x_2<x<b$, so $\displaystyle\lim_{x\to b-}\dfrac{f(x)}{g(x)}=\infty$ in this case also.\hfill $\blacksquare$
+\
+\
+**Theorem 3.3.2** *If $f$ is integrable on $[a,b]$ and $c$ is a constant, then $cf$ is integrable on $[a,b]$ and $$\int_a^b cf(x) dx=c\int_a^b f(x)dx.$$*
+
+**Proof** Trivial if $c=0$. Suppose $c\neq 0$ and $\epsilon>0$. If $\widehat{\sigma}$ is a Riemann sum of $cf$, then $\displaystyle\widehat{\sigma}=\sum_{j=1}^n cf(c_j)(x_j-x_{j-1})=c\sum_{j=1}^n f(c_j)(x_j-x_{j-1})=c\sigma$, where $\sigma$ is a Riemann sum for $f$. Since $f$ is integrable on $[a,b]$, Definition 3.1.1 implies that there is a $\delta>0$ such that $\displaystyle\left|\sigma-\int_a^b f(x) dx\right|<\dfrac{\epsilon}{|c|}$ if $\sigma$ is a Riemann sum of $f$ over any partition $P$ of $[a,b]$ such that $\|P\|<\delta$. Therefore,$\displaystyle\left|\widehat{\sigma}-\int_a^b cf(x) dx\right|<\epsilon$ if $\widehat{\sigma}$ is a Riemann sum of $cf$ over any partition $P$ of $[a,b]$ such that $\|P\|<\delta$, so $cf$ is integrable over $[a,b]$, again by Definition 3.1.1.\hfill $\blacksquare$
+\
+\
+**Theorem 3.3.3** *If $f_1,f_2,\ldots,f_n$ are integrable on $[a,b]$ and $c_1,c_2,\dots,c_n$ are constants, then $c_1f_1+c_2f_2+\dots+c_nf_n$ is integrable on $[a,b]$ and*
+$$
+\begin{aligned}
+\int_a^b (c_1f_1+c_2f_2+\dots+c_nf_n)(x) dx &= c_1\int_a^b f_1(x) dx +c_2\int_a^b f_2(x) dx\\
+&\;\;\;\;+\dots+c_n\int_a^b f_n(x)dx.
+\end{aligned}
+$$
+**Proof** If $f_1$ and $f_2$ are integrable on $[a,b]$ and $c_1$ and $c_2$ are constants, then Theorem 3.3.2 implies that $c_1f_1$ and $c_2f_2$ are integrable on $[a,b]$ and $\displaystyle\int_a^b c_if_i(x)dx=c_i\int_a^bf_i(x)dx$, $i=1,2$. Therefore, Theorem 3.3.1 implies $P_2$. Now suppose $n\geq 2$ and $P_n$ is true. Let $f_1,f_2,\ldots,f_{n+1}$ be integrable on $[a,b]$ and $c_1,c_2,\ldots,c_{n+1}$ be constants. By Theorem 3.3.1, $c_1f_1,c_2f_2,\ldots,c_{n+1}f_{n+1}$ are integrable on $[a,b]$, and $\displaystyle\int_a^bc_if_i(x)dx=c_i\int_a^bf_i(x)dx$, $i=1,2,\ldots,n+1$. Now $\displaystyle\int_a^b(c_1f_1+c_2f_2+\dots+c_{n+1}f_{n+1})(x)dx=\int_a^b[(c_1f_1+c_2f_2+\dots+c_nf_n)(x)+c_{n+1}f_{n+1}(x)]dx=\int_a^b(c_1f_1+c_2f_2+\dots+c_nf_n)(x)dx+\int_a^bc_{n+1}f_{n+1}(x)dx\;(\text{by}\;P_2)=c_1\int_a^bf_1(x)dx+c_2\int_a^bf_2(x)dx+\dots+c_n\int_a^bf_n(x)dx+c_{n+1}\int_a^bf_{n+1}(x)dx$ by $P_n$ and Theorem 3.3.2. Therefore, $P_n$ implies $P_{n+1}$.\hfill $\blacksquare$
+\
+\
+**Theorem 3.3.11** *If $f$ is integrable on $[a,b]$ and $a\leq c\leq b$, then $\displaystyle F(x)=\int_c^xf(t)dt$ is differentiable at any point $x_0$ in $(a,b)$ where $f$ is continuous, with $F'(x_0)=f(x_0)$. If $f$ is continuous from the right at $a$, then $F_{+}^{'}(a)=f(a)$. If $f$ is continuous from the left at $b$, then $F_{-}^{'}(b)=f(b)$.*
+
+**Additional Proof** Since $\displaystyle\frac{1}{x-a}\int_a^xf(a)dt=f(a)$, we can write $$\frac{F(x)-F(a)}{x-a}-f(a)=\frac{1}{x-a}\int_a^x[f(t)-f(a)]dt.$$ From this and Theorem 3.3.5, (A) $\displaystyle\left|\frac{F(x)-F(a)}{x-a}-f(a)\right|\leq\frac{1}{|x-a|}\left|\int_a^x|f(t)-f(a)|dt\right|.$ Since $f$ is continuous from the right at $a$, there is for each $\epsilon>0$ a $\delta>0$ such that $|f(t)-f(a)|<\epsilon$ if $a\leq x<a+\delta$ and $t$ is between $x$ and $a$. Therefore, from (A), $\displaystyle\left|\frac{F(x)-F(a)}{x-a}-f(a)\right|<\epsilon\frac{|x-a|}{|x-a|}=\epsilon$ if $a<x<a+\delta$. This proves that $F_{+}^{'}(a)=f(a)$.
+
+Since $\displaystyle\frac{1}{b-x}\int_x^bf(b)dt=f(b)$, we can write $$\frac{F(x)-F(b)}{b-x}-f(b)=\frac{1}{b-x}\int_x^b[f(b)-f(t)]dt.$$ From this and Theorem 3.3.5, (B) $\displaystyle\left|\frac{F(x)-F(b)}{b-x}-f(b)\right|\leq\frac{1}{|b-x|}\left|\int_x^b|f(b)-f(t)|dt\right|.$ Since $f$ is continuous from the left at $b$, there is for each $\epsilon>0$ a $\delta>0$ such that $|f(b)-f(t)|<\epsilon$ if $b-\delta\leq x<b$ and $t$ is between $x$ and $b$. Therefore, from (B), $\displaystyle\left|\frac{F(x)-F(b)}{b-x}-f(b)\right|<\epsilon\frac{|b-x|}{|b-x|}=\epsilon$ if $b-\delta<x<b$. This proves that $F_{-}^{'}(b)=f(b)$.\hfill $\blacksquare$
+\
+\
+**Theorem 4.1.7** *Let $\displaystyle\lim_{x\to\infty}f(x)=L$, where $L$ is in the extended reals, and suppose that $s_n=f(n)$ for large $n$. Then $$\lim_{n\to\infty}s_n=L.$$*
+
+**Proof** Suppose that $s_n=f(n)$ for $n\geq N_1$. Let $\epsilon>0$. Since $\displaystyle\lim_{x\to\infty}f(x)=L$ there is an integer $N>N_1$ such that $|f(x)-L|<\epsilon$ if $x>N$, so $|s_n-L|=|f(n)-L|<\epsilon$ if $n\geq N$. Therefore, $\displaystyle\lim_{n\to\infty}s_n=L$.\hfill $\blacksquare$
+\
+\
+**Theorem 4.2.3** *If $\{s_n\}$ is monotonic and has a subsequence $\{s_{n_k}\}$ such that $$\lim_{k\to\infty}s_{n_k}=s\;\;\;(-\infty\leq s\leq\infty),$$ then $$\lim_{n\to\infty}s_n=s.$$*
+
+**Additional Proof** If $\{s_n\}$ is nonincreasing, then $\{s_{n_k}\}$ is also, so it suffices to show that (A) $\inf\{s_{n_k}\}=\inf\{s_n\}$ and apply Theorem 4.1.6(b). Since the set of terms of $\{s_{n_k}\}$ is contained in the set of terms of $\{s_n\}$, (B) $\inf\{s_n\}\leq\inf\{s_{n_k}\}$. Since $\{s_n\}$ is nonincreasing, there is for every $n$ an integer $n_k>n$ such that $s_n\geq s_{n_k}$. This implies that $\inf\{s_n\}\geq\inf\{s_{n_k}\}$. This and (B) imply the conclusion.\hfill $\blacksquare$
+\
+\
+**Theorem 4.3.19** *If $\sum a_n$ converges absolutely, then $\sum a_n$ converges.*
+
+**Proof** Suppose that $\displaystyle\sum_{n=m}^\infty |a_n|<\infty$. Let $b_n=|a_n|-a_n$; then $0\leq b_n \leq 2|a_n|$, so $\displaystyle\sum_{n=m}^\infty b_n$ converges absolutely, by the comparison test. Since $a_n=|a_n|-b_n$, $\displaystyle\sum_{n=m}^\infty a_n$ converges, by Theorem 4.3.3.\hfill $\blacksquare$
+
+\pagebreak
+
+# References
